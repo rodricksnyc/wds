@@ -1,0 +1,62 @@
+#wrapper {
+  min-height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  display: block;
+  position: relative;
+  overflow:hidden;
+}
+
+body, html {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a{
+  text-decoration: none !important;
+  outline: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+.padding-0 {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.fal.fa-angle-down {
+  color:#15617d;
+  font-size:34px;
+  font-weight: 100 !important;
+  margin-top:-8px;
+}
+
+p.teal {
+  color:#15617d;
+  font-size:22px;
+  font-weight: 100;
+  margin-bottom:0px !important;
+}
+
+h1.teal {
+  color:#15617d;
+  font-size:40px;
+  font-weight: 700;
+}
+
+.m10 {
+  margin-top:10%;
+}
+
+.topBlock {
+  background:#e6f2f5;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  padding: .5em 1.6em;
+  max-width: 300px;
+  text-align: center;
+  z-index: 9999999;
+}
