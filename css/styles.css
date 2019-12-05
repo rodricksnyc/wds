@@ -1,7 +1,7 @@
 #wrapper {
   min-height: 100vh;
-  overflow-x: hidden;
-  overflow-y: scroll;
+  /* overflow-x: hidden;
+  overflow-y: scroll; */
   display: block;
   position: relative;
   overflow:hidden;
@@ -46,7 +46,8 @@ h1.teal {
 }
 
 .m10 {
-  margin-top:10%;
+    margin-top: 10%;
+    margin-bottom: 5%;
 }
 
 .topBlock {
@@ -59,4 +60,127 @@ h1.teal {
   max-width: 300px;
   text-align: center;
   z-index: 9999999;
+}
+
+.top-search-input-wrapper {
+    color: #15617d;
+}
+.trs-hide-btn {
+    border: none;
+    padding: 0px;
+    display: contents;
+    position: relative;
+}
+
+.w1000 {
+  max-width:1000px;
+}
+
+i.fa-search.allResults {
+    position: absolute;
+    right: 17px;
+    top: -.2rem;
+    cursor: pointer;
+    color: #07477d;
+    font-weight: 500;
+    font-size: 23px;
+}
+
+::placeholder {
+  color:#07477d !important;
+  font-weight: 500 !important;
+  font-size: 22px;
+  opacity: 1 !important;
+}
+
+input[type="text"].allResults {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px solid #3796ad;
+    border-radius: 0;
+    padding-left: 0;
+    text-overflow: ellipsis;
+    color:#07477d;
+    opacity: 1;
+    padding-bottom: 1em;
+}
+.form-control {
+  box-shadow: none !important;
+}
+
+.hero-img-container {
+    height: calc(100vh - 30rem);
+    position: relative;
+    display: flex;
+    align-items: center;
+    min-height: 40rem;
+    width: 100% !important;
+    margin-left: 0;
+    left: 0 !important;
+    right: 0 !important;
+
+}
+.hero-img-container.secondOne {
+    /* height: 930px !important; */
+    bottom: 0 !important;
+}
+.hero-img-container.secondOne {
+    /* max-height: 90rem; */
+}
+.hero-img {
+    background-image: url(../images/background.png);
+    height: inherit;
+    /* min-height: inherit; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    width: 100%;
+    left: 0;
+    top: 0px;
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    /* max-height: 78rem; */
+    left: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    /* min-height: 77rem; */
+    height: 100%;
+}
+.hero-img.secondOne {
+    /* max-height: 93rem; */
+}
+
+
+.whiteOuter {
+  width: 100%;
+      min-height: 66em;
+      border-radius: 0px;
+      position: relative;
+      z-index: 1;
+      background: inherit;
+      top: 20em;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0;
+      bottom: 0;
+  
+}
+
+.whiteOuter:before {
+    content: "";
+    position: absolute;
+    background: inherit;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    filter: blur(10px);
+    margin:0;
+    bottom:0;
 }
