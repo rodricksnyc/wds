@@ -45,6 +45,14 @@ h1.teal {
   font-weight: 700;
 }
 
+h1.navy {
+  color:#07477c;
+  font-size:33px;
+  font-weight: 700;
+}
+
+
+
 .m10 {
   margin-top: 10%;
   margin-bottom: 5%;
@@ -115,7 +123,7 @@ input[type="text"].allResults {
   bottom: 0 !important;
 }
 .hero-img-container.secondOne {
-  max-height: 90rem;
+  max-height: 65rem;
 }
 .hero-img-container {
   height: calc(100vh - 4rem);
@@ -136,11 +144,28 @@ input[type="text"].allResults {
   height: 100%;
   top: 0;
   width: 100%;
-  height:34em;
+  height:75em;
   border-radius: 0px;
-  background-color: rgba(255, 255, 255, .15);
-  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, .35);
+  backdrop-filter: blur(15px);
+}
 
+.whiteInner {
+    background: white;
+    opacity: .85;
+    padding: 2em 1em;
+    height: 30em;
+    margin-left: 2em;
+    margin-right: 2em;
+    padding: 3em;
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    position: relative;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .hero-img.secondOne {
