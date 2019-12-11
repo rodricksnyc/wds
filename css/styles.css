@@ -284,7 +284,6 @@ input[type="text"].allResults {
   max-width: 350px;
 }
 
-
 .abso6 {
   position: absolute;
   bottom: 244px;
@@ -292,4 +291,13 @@ input[type="text"].allResults {
   z-index: 99999;
   left: 509px;
   max-width: 100px;
+}
+
+.abso7 {
+  position: absolute;
+  bottom: 69px;
+    position: absolute;
+    z-index: 99999;
+    left: 646px;
+    max-width: 86px;
 }
