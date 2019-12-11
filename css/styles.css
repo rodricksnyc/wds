@@ -278,10 +278,10 @@ input[type="text"].allResults {
 .abso5 {
   position: absolute;
   bottom: 145px;
-    position: absolute;
-    z-index: 88;
-    left: 420px;
-    max-width: 350px;
+  position: absolute;
+  z-index: 88;
+  left: 420px;
+  max-width: 350px;
 }
 
 
