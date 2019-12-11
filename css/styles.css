@@ -5,6 +5,7 @@
   display: block;
   position: relative;
   overflow:hidden;
+
 }
 
 body, html {
@@ -124,36 +125,18 @@ input[type="text"].allResults {
   box-shadow: none !important;
 }
 
-/* .hero-img-container.secondOne {
-
-  bottom: 0 !important;
-}
-.hero-img-container.secondOne {
-
-}
-.hero-img-container {
-  height: calc(100vh - 4rem);
-  position: relative;
-
-  min-height: 40rem;
-  padding-left: 1em;
-  padding-right: 1em;
-  max-height: 1000px;
-} */
-
 .whiteOuter {
   position: absolute;
   margin: 0;
   height: 100%;
-  top: 0;
+  top: 100px;
   width: 100%;
-  /* height: auto; */
   border-radius: 0px;
   background-color: rgba(255, 255, 255, .35);
   backdrop-filter: blur(15px);
   z-index: 99999999;
   bottom: 0;
-  min-height: 75rem;
+  min-height: 900px;
 
 }
 
@@ -179,68 +162,28 @@ input[type="text"].allResults {
   box-shadow: 0px 0px 20px -5px rgba(0,0,0,0.33);
 }
 
-
-
-/* .hero-img {
-    background-image: url(../images/background.png);
-    min-height: inherit;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: bottom;
-    width: 100%;
-    top: 0;
-    z-index: -1;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    margin-top: 9em;
-    height: 650px;
-} */
-
-
-
 .hero-img-container {
-    height: calc(100vh - 30rem);
-    position: relative;
-    display: flex;
-    align-items: center;
-    /* min-height: 40rem;
-    padding-left: 1em;
-    padding-right: 1em; */
-    /* max-height: 78rem; */
+  height: calc(100vh - 50rem);
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .hero-img-container.secondOne {
-    /* height: 60rem !important; */
-    bottom: 0 !important;
-}
-
-.hero-img-container.secondOne {
-    /* max-height: 60rem; */
-}
-
-
-.hero-img.secondOne {
-    max-height: 93rem;
+  bottom: 0 !important;
 }
 
 .hero-img {
-    background-image: url(../images/background.png);
-    height: inherit;
-      min-height: inherit;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position: bottom;
-      width: 100%;
-      left: 0;
-      /* top: 0px; */
-      z-index: -1;
-      position: absolute;
-      left: 0;
-      max-height: 78rem;
-      bottom: 0;
+  background-image: url(../images/background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  width: 100%;
+  left: 0;
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  height: 600px;
+  bottom: 0;
 
 }
