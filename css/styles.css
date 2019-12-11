@@ -283,3 +283,13 @@ input[type="text"].allResults {
     left: 420px;
     max-width: 350px;
 }
+
+
+.abso6 {
+  position: absolute;
+  bottom: 244px;
+  position: absolute;
+  z-index: 99999;
+  left: 509px;
+  max-width: 100px;
+}
