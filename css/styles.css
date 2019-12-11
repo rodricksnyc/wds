@@ -5,7 +5,7 @@
   display: block;
   position: relative;
   overflow:hidden;
-
+  /* height: calc(100vh - 50rem); */
 }
 
 body, html {
@@ -129,7 +129,7 @@ input[type="text"].allResults {
   position: absolute;
   margin: 0;
   height: 100%;
-  top: 100px;
+  /* top: 100px; */
   width: 100%;
   border-radius: 0px;
   background-color: rgba(255, 255, 255, .35);
@@ -164,9 +164,31 @@ input[type="text"].allResults {
 
 .hero-img-container {
   height: calc(100vh - 50rem);
+  left: 0;
+  bottom: 0;
+  top: 0;
+  width: 100%;
   position: relative;
-  display: flex;
-  align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+}
+
+.picture {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      top: 0;
+      z-index: 99999;
+      left: 0;
+      right: 0;
+}
+
+.rel {
+  position:relative;
+  bottom:0 !important;
 }
 
 .hero-img-container.secondOne {
@@ -178,12 +200,17 @@ input[type="text"].allResults {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
-  width: 100%;
-  left: 0;
-  z-index: -1;
-  position: absolute;
-  left: 0;
-  height: 600px;
-  bottom: 0;
+  z-index: 34;
 
+      left: 0;
+      height: 600px;
+      bottom: 0;
+      top: 0;
+      width: 100%;
+      position: relative;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100vh;
 }
