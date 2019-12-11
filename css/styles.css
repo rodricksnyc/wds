@@ -229,7 +229,7 @@ input[type="text"].allResults {
   width:50%;
   bottom:0;
   left:0;
-
+  min-width:900px;
 }
 
 .abso0 {
@@ -273,4 +273,13 @@ input[type="text"].allResults {
   z-index: 999;
   left: 300px;
   max-width: 175px;
+}
+
+.abso5 {
+  position: absolute;
+  bottom: 145px;
+    position: absolute;
+    z-index: 88;
+    left: 420px;
+    max-width: 350px;
 }
