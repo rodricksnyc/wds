@@ -27,8 +27,8 @@ setTimeout(function() {
 $(".hero-img-container").mousemove(function(e) {
   // parallaxIt(e, ".abso0", -8);
   // parallaxIt(e, ".abso00", 3);
-  parallaxIt(e, ".abso4", -9);
-  parallaxIt(e, ".abso7", 9);
+  // parallaxIt(e, ".abso4", -9);
+  parallaxIt(e, ".abso7", 15);
 
 });
 
