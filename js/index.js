@@ -20,14 +20,19 @@ setTimeout(function() {
   $('.abso2').removeClass('transparent').addClass('animated tada')
 },1300)
 
-
+setTimeout(function() {
 const slideFade = (elem) => {
-   const fade = { opacity: 0, transition: 'opacity 0.5s' };
+   const fade = { opacity: 0, transition: 'opacity .5s' };
    elem.css(fade).addClass('animated slideOutUp slower')
    }
 
 slideFade($('.abso44'));
+},1900)
 
+setTimeout(function() {
+  $('.abso444').removeClass('transparent').addClass('animated fadeInUp')
+
+},1980)
 
 
 
