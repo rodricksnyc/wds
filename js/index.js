@@ -21,6 +21,13 @@ setTimeout(function() {
 },1300)
 
 
+const slideFade = (elem) => {
+   const fade = { opacity: 0, transition: 'opacity 0.5s' };
+   elem.css(fade).addClass('animated slideOutUp slower')
+   }
+
+slideFade($('.abso44'));
+
 
 
 
