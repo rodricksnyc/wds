@@ -1,8 +1,27 @@
 $(document).ready(function () {
 
 setTimeout(function() {
-  $('.abso6').addClass('animated slide-both infinite slow')
-},0)
+  $('.abso6').removeClass('transparent').addClass('animated slide-both infinite slow')
+},300)
+
+setTimeout(function() {
+  $('.abso00').removeClass('transparent').addClass('animated slideInUp')
+},300)
+
+setTimeout(function() {
+  $('.abso1').removeClass('transparent').addClass('animated flipInX')
+},600)
+
+setTimeout(function() {
+  $('.abso3').removeClass('transparent').addClass('animated flipInX')
+},1000)
+
+setTimeout(function() {
+  $('.abso2').removeClass('transparent').addClass('animated tada')
+},1300)
+
+
+
 
 
 $(".hero-img-container").mousemove(function(e) {
