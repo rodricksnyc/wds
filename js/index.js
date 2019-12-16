@@ -1,51 +1,83 @@
 $(document).ready(function () {
 
+
+$("#first").on('mouseenter' , function() {
+
+  setTimeout(function() {
+    $('.first').addClass('animated slideOutUp')
+  },0)
+
+
 setTimeout(function() {
-  $('.abso6').removeClass('transparent').addClass('animated slide-both infinite slow')
+  $('#clicked0 .box').removeClass('transparent').addClass('animated slideInUp')
 },300)
 
 setTimeout(function() {
-  $('.abso00').removeClass('transparent').addClass('animated slideInUp')
-},300)
-
-setTimeout(function() {
-  $('.abso1').removeClass('transparent').addClass('animated flipInX')
+  $('#clicked2 .box').removeClass('transparent').addClass('animated flipInX')
 },600)
 
 setTimeout(function() {
-  $('.abso3').removeClass('transparent').addClass('animated flipInX')
+  $('#clicked3 .box').removeClass('transparent').addClass('animated flipInX')
 },1000)
 
 setTimeout(function() {
-  $('.abso2').removeClass('transparent').addClass('animated tada')
+  $('#clicked4 .box').removeClass('transparent').addClass('animated tada')
 },1300)
 
-setTimeout(function() {
-const slideFade = (elem) => {
-   const fade = { opacity: 0, transition: 'opacity .5s' };
-   elem.css(fade).addClass('animated slideOutUp slower')
-   }
 
-slideFade($('.abso44'));
-},1900)
+})
 
-setTimeout(function() {
-  $('.abso444').removeClass('transparent').addClass('animated fadeInUp')
+// $("#second").mouseenter(function() {
+//
+//   setTimeout(function() {
+//     $('.first').removeClass('animated slideOutUp').addClass('animated slideInDown')
+//   },0)
+//
+//
+// setTimeout(function() {
+//   $('#clicked0 .box').addClass('transparent').removeClass('animated slideInUp');
+//   $('#clicked2 .box').addClass('transparent').removeClass('animated flipInX');
+//   $('#clicked3 .box').addClass('transparent').removeClass('animated flipInX');
+//   $('#clicked4 .box').addClass('transparent').removeClass('animated tada');
+//
+// },300)
+//
+//
+// })
 
-},1980)
+
+$("#second").mouseenter(function() {
 
 
+  setTimeout(function() {
+    $('.second').addClass('animated slideOutUp')
+  },0)
 
-$(".hero-img-container").mousemove(function(e) {
-  // parallaxIt(e, ".abso0", -8);
-  // parallaxIt(e, ".abso00", 3);
-  // parallaxIt(e, ".abso4", -9);
-  parallaxIt(e, ".abso7", 15);
+  setTimeout(function() {
+    $('#clicked66 .box').removeClass('transparent').addClass('animated slide-both infinite slow')
+  },500)
+
+// setTimeout(function() {
+// const slideFade = (elem) => {
+//    const fade = { opacity: 0, transition: 'opacity .5s' };
+//    elem.css(fade).addClass('animated slideOutUp slower')
+//    }
+//
+// slideFade($('.abso44'));
+// },1900)
+//
+// setTimeout(function() {
+//   $('.abso444').removeClass('transparent').addClass('animated fadeInUp')
+//
+// },1980)
+
+$("#all").mousemove(function(e) {
+  parallaxIt(e, ".phone", 15);
 
 });
 
 function parallaxIt(e, target, movement) {
-  var $this = $(".hero-img-container");
+  var $this = $("#all");
   var relX = e.pageX - $this.offset().left;
   var relY = e.pageY - $this.offset().top;
 
@@ -54,6 +86,9 @@ function parallaxIt(e, target, movement) {
     y: (relY - $this.height() / 2) / $this.height() * movement
   });
 }
+
+})
+
 
 
 })
