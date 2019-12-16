@@ -168,12 +168,13 @@ input[type="text"].allResults {
   width: 100%;
   height: 600px;
   position: relative;
-  max-width: 1800px;
-  background: url('../images/main2.png') no-repeat;
+  background: url('../images/main2.png');
   position: relative;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: 100% 100%;
+
 }
 
 #clicked0 {
@@ -271,8 +272,63 @@ input[type="text"].allResults {
   transform:translateX(25%);
 }
 
+#clicked7 {
+    position: absolute;
+    left: 40%;
+    z-index: 100;
+    bottom: 19%;
+}
+#clicked7 .box {
+  width: 10vw;
+  max-width: 80px;
+  transform:translateY(25%);
+  transform:translateX(25%);
+}
+
+#clicked8 {
+  position: absolute;
+      right: 15.1%;
+      z-index: 100;
+      bottom: 27%;
+      overflow: hidden;
+}
+#clicked8 .box {
+  width: 20vw;
+  max-width: 21%;
+  transform: translateY(0%);
+  transform: translateX(0%);
+}
+
+#clicked9 {
+  position: absolute;
+      right: 15.1%;
+      z-index: 100;
+      bottom: 29%;
+}
+#clicked9 .box {
+  width: 20vw;
+  max-width: 200px;
+  transform: translateY(25%);
+  transform: translateX(25%);
+}
+
+#clicked10 {
+  position: absolute;
+  right: 16.1%;
+  z-index: 100;
+  bottom: 35%;
+}
+#clicked10 .box {
+  width: 14vw;
+  max-width: 135px;
+  transform: translateY(25%);
+  transform: translateX(25%);
+}
+
+
+
 .content-spacer {
-  height: 20vw;
+  height: 15vw;
 }
 
 .hero-img-container {
