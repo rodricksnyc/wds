@@ -169,7 +169,7 @@ input[type="text"].allResults {
   height: 600px;
   position: relative;
   max-width: 1800px;
-  background: url('../images/main.png') no-repeat;
+  background: url('../images/main2.png') no-repeat;
   position: relative;
   background-size: contain;
   background-repeat: no-repeat;
@@ -178,37 +178,38 @@ input[type="text"].allResults {
 
 #clicked0 {
   position: absolute;
-    left: 10%;
-    z-index: 100;
-    bottom: 42%;
+  left: 10%;
+  z-index: 100;
+  bottom: 54%;
 
 }
 #clicked0 .box {
-  width:14vw;
+  width:5vw;
   max-width: 40px;
   transform:translateY(25%);
   transform:translateX(25%);
 }
 
 #clicked1 {
-    position: absolute;
+  position: absolute;
     left: 6%;
     z-index: 100;
-    bottom: 9%;
+    bottom: 18%;
 }
 #clicked1 .box {
-  width:14vw;
-  max-width: 180px;
+  width: 18vw;
+  max-width: 190px;
   transform:translateY(25%);
   transform:translateX(25%);
 }
 
 
 #clicked2 {
-      position: absolute;
-      left: 6%;
+    position: absolute;
+      left: 7%;
       z-index: 100;
-      bottom: 7%;
+      bottom: 17%;
+
 }
 #clicked2 .box {
   width:14vw;
@@ -218,10 +219,10 @@ input[type="text"].allResults {
 }
 
 #clicked3 {
-    position: absolute;
-      left: 7%;
-      z-index: 100;
-      bottom: 5%;
+  position: absolute;
+  left: 7%;
+  z-index: 100;
+  bottom: 15%;
 }
 #clicked3 .box {
   width:14vw;
@@ -232,9 +233,9 @@ input[type="text"].allResults {
 
 #clicked4 {
   position: absolute;
-      left: 7%;
-      z-index: 100;
-      bottom: 24%;
+  left: 7%;
+  z-index: 100;
+  bottom: 34%;
 
 }
 #clicked4 .box {
@@ -244,8 +245,34 @@ input[type="text"].allResults {
   transform:translateX(25%);
 }
 
+#clicked5 {
+  position: absolute;
+  left: 15%;
+  z-index: 100;
+  bottom: 10%;
+}
+#clicked5 .box {
+  width:14vw;
+  max-width: 155px;
+  transform:translateY(25%);
+  transform:translateX(25%);
+}
+
+#clicked6 {
+    position: absolute;
+    left: 22%;
+    z-index: 100;
+    bottom: 28%;
+}
+#clicked6 .box {
+  width: 25vw;
+  max-width: 350px;
+  transform:translateY(25%);
+  transform:translateX(25%);
+}
+
 .content-spacer {
-    height: 20vw;
+  height: 20vw;
 }
 
 .hero-img-container {
@@ -321,13 +348,13 @@ input[type="text"].allResults {
   right:0;
 }
 .absoMiddle {
-    position: absolute;
-    width: 25%;
-    bottom: 0;
-    left: 45%;
-    min-width: 200px;
-    z-index: -1;
-    max-width: 360px;
+  position: absolute;
+  width: 25%;
+  bottom: 0;
+  left: 45%;
+  min-width: 200px;
+  z-index: -1;
+  max-width: 360px;
 }
 
 .abso0 {
@@ -373,18 +400,18 @@ input[type="text"].allResults {
   max-width: 175px;
 }
 .abso44 {
-    bottom: 77px;
-     position: absolute;
-     z-index: 99999;
-     left: 328px;
-     max-width: 120px;
+  bottom: 77px;
+  position: absolute;
+  z-index: 99999;
+  left: 328px;
+  max-width: 120px;
 }
 .abso444 {
-    bottom: 77px;
-     position: absolute;
-     z-index: 99998;
-     left: 328px;
-     max-width: 120px;
+  bottom: 77px;
+  position: absolute;
+  z-index: 99998;
+  left: 328px;
+  max-width: 120px;
 }
 
 .abso5 {
