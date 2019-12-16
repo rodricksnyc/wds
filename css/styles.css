@@ -176,6 +176,20 @@ input[type="text"].allResults {
   background-position: bottom;
 }
 
+#clicked0 {
+  position: absolute;
+    left: 10%;
+    z-index: 100;
+    bottom: 42%;
+
+}
+#clicked0 .box {
+  width:14vw;
+  max-width: 40px;
+  transform:translateY(25%);
+  transform:translateX(25%);
+}
+
 #clicked1 {
     position: absolute;
     left: 6%;
@@ -196,7 +210,7 @@ input[type="text"].allResults {
       z-index: 100;
       bottom: 7%;
 }
-#clicked2 .box2 {
+#clicked2 .box {
   width:14vw;
   max-width: 140px;
   transform:translateY(25%);
@@ -205,26 +219,27 @@ input[type="text"].allResults {
 
 #clicked3 {
     position: absolute;
-    left: 6%;
-    z-index: 100;
-    bottom: 9%;
+      left: 7%;
+      z-index: 100;
+      bottom: 5%;
 }
-#clicked3 .box3 {
+#clicked3 .box {
   width:14vw;
-  max-width: 180px;
+  max-width: 130px;
   transform:translateY(25%);
   transform:translateX(25%);
 }
 
 #clicked4 {
-    position: absolute;
-    left: 6%;
-    z-index: 100;
-    bottom: 9%;
+  position: absolute;
+      left: 7%;
+      z-index: 100;
+      bottom: 24%;
+
 }
-#clicked4 .box4 {
+#clicked4 .box {
   width:14vw;
-  max-width: 180px;
+  max-width: 43px;
   transform:translateY(25%);
   transform:translateX(25%);
 }
