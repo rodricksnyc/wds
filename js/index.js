@@ -1,7 +1,19 @@
 $(document).ready(function () {
 
 
-  $(".one").on('mouseenter', function() {
+
+  // resizeDiv();
+  // window.onresize = function(event) {
+  //     resizeDiv();
+  // }
+  // function resizeDiv() {
+  //     vpw = $(window).width();
+  //     vph = $(window).height();
+  //     $('#wrapper').css({'height': vph + 'px'});
+  // }
+
+
+  $("#first").on('mouseenter', function() {
 
 
     console.log("entering")
@@ -28,16 +40,16 @@ $(document).ready(function () {
 
   });
 
-  $(".one").on('mouseleave' , function() {
-
-        console.log("leaving")
-
-    // setTimeout(function() {
-    //
-    //   $('.first').removeClass('animated slideOutUp');
-    //
-    // }, 700)
-
+//   $(".one").on('mouseleave' , function() {
+//
+//     console.log("leaving")
+//
+//     setTimeout(function() {
+//
+//       $('.first').removeClass('animated slideOutUp');
+//
+//     }, 700)
+//
 //     setTimeout(function() {
 //         $('.first').removeClass('animated slideOutUp');
 //       $('.first').addClass('animated slideInDown');
@@ -47,60 +59,60 @@ $(document).ready(function () {
 //       $('.first').removeClass('animated slideInDown');
 //
 //     },1400)
+//
+//     setTimeout(function() {
+//       $('#clicked0 .box').addClass('transparent').removeClass('animated slideInUp');
+//       $('#clicked2 .box').addClass('transparent').removeClass('animated flipInX');
+//       $('#clicked3 .box').addClass('transparent').removeClass('animated flipInX');
+//       $('#clicked4 .box').addClass('transparent').removeClass('animated tada');
+//
+//     },300)
+//
+//   })
+
+
+
+  $("#second").mouseenter(function() {
+
+      $('.second').addClass('animated slideOutUp')
+
+
+    setTimeout(function() {
+      $('#clicked66 .box').removeClass('transparent').addClass('animated slide-both infinite slow')
+    },500)
 
     // setTimeout(function() {
-    //   $('#clicked0 .box').addClass('transparent').removeClass('animated slideInUp');
-    //   $('#clicked2 .box').addClass('transparent').removeClass('animated flipInX');
-    //   $('#clicked3 .box').addClass('transparent').removeClass('animated flipInX');
-    //   $('#clicked4 .box').addClass('transparent').removeClass('animated tada');
+    // const slideFade = (elem) => {
+    //    const fade = { opacity: 0, transition: 'opacity .5s' };
+    //    elem.css(fade).addClass('animated slideOutUp slower')
+    //    }
     //
-    // },300)
+    // slideFade($('.abso44'));
+    // },1900)
+    //
+    // setTimeout(function() {
+    //   $('.abso444').removeClass('transparent').addClass('animated fadeInUp')
+    //
+    // },1980)
+
+    $("#all").mousemove(function(e) {
+      parallaxIt(e, ".phone", 15);
+
+    });
+
+    function parallaxIt(e, target, movement) {
+      var $this = $("#all");
+      var relX = e.pageX - $this.offset().left;
+      var relY = e.pageY - $this.offset().top;
+
+      TweenMax.to(target, 1, {
+        x: (relX - $this.width() / 2) / $this.width() * movement,
+        y: (relY - $this.height() / 2) / $this.height() * movement
+      });
+    }
 
   })
 
-
-
-//   $(".two").mouseenter(function() {
-//
-//       $('.second').addClass('animated slideOutUp')
-//
-//
-//     setTimeout(function() {
-//       $('#clicked66 .box').removeClass('transparent').addClass('animated slide-both infinite slow')
-//     },500)
-//
-//     // setTimeout(function() {
-//     // const slideFade = (elem) => {
-//     //    const fade = { opacity: 0, transition: 'opacity .5s' };
-//     //    elem.css(fade).addClass('animated slideOutUp slower')
-//     //    }
-//     //
-//     // slideFade($('.abso44'));
-//     // },1900)
-//     //
-//     // setTimeout(function() {
-//     //   $('.abso444').removeClass('transparent').addClass('animated fadeInUp')
-//     //
-//     // },1980)
-//
-//     $("#all").mousemove(function(e) {
-//       parallaxIt(e, ".phone", 15);
-//
-//     });
-//
-//     function parallaxIt(e, target, movement) {
-//       var $this = $("#all");
-//       var relX = e.pageX - $this.offset().left;
-//       var relY = e.pageY - $this.offset().top;
-//
-//       TweenMax.to(target, 1, {
-//         x: (relX - $this.width() / 2) / $this.width() * movement,
-//         y: (relY - $this.height() / 2) / $this.height() * movement
-//       });
-//     }
-//
-//   })
-//
 // $(".two").mouseleave(function() {
 //
 //
@@ -135,13 +147,13 @@ $(document).ready(function () {
 //   })
 //
 //
-//   $(".three").mouseenter(function() {
-//
-//       $('.third').addClass('animated slideOutUp')
-//
-//
-//   })
-//
+  $("#third").mouseenter(function() {
+
+      $('.third').addClass('animated slideOutUp')
+
+
+  })
+
 //   $(".three").mouseleave(function() {
 //
 //       $('.third').removeClass('animated slideOutUp');
@@ -155,12 +167,12 @@ $(document).ready(function () {
 //   })
 //
 //
-//   $(".four").mouseenter(function() {
-//
-//       $('.fourth').addClass('animated slideOutUp')
-//
-//
-//   })
+  $("#fourth").mouseenter(function() {
+
+      $('.fourth').addClass('animated slideOutUp')
+
+
+  })
 //
 //   $(".four").mouseleave(function() {
 //
