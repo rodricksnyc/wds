@@ -169,8 +169,15 @@ $(document).ready(function () {
 //
   $("#fourth").mouseenter(function() {
 
-      $('.fourth').addClass('animated slideOutUp')
+      $('.fourth').addClass('animated slideOutUp');
 
+      setTimeout(function() {
+            $('#clicked11 .box').removeClass('transparent').addClass('animated flicker-in-1')
+      },800)
+
+      setTimeout(function() {
+            $('#clicked12 .box').removeClass('transparent').addClass('animated slit-in-vertical')
+      },0)
 
   })
 //
