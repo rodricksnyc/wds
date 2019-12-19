@@ -3,22 +3,24 @@ $(document).ready(function () {
 
   $(".block1").on('mouseenter', function() {
 
-
     var divPosition = $('#anchorPoint').offset();
     $('html, body').animate({scrollTop: divPosition.top}, 3000);
 
+    $('.one').addClass('hovered')
 
     setTimeout(function() {
       $('.one .stickyWords').animate({
-        'padding-top' : 0
-      },300);
-    }, 800)
+        'padding-top' : 0,
+        'margin-top' :'-5em'
+      },300)
+    }, 500);
+
 
     setTimeout(function() {
           $('.one .stickyWords').animate({
-            'padding-left' : '8.4em'
+            'padding-left' : '7em'
           },600);
-      }, 1000)
+      }, 700)
 
 
     setTimeout(function() {
@@ -27,7 +29,7 @@ $(document).ready(function () {
 
     setTimeout(function() {
       $('#clicked0 .box').removeClass('transparent').addClass('animated slideInUp')
-    },1400)
+    },1200)
 
     setTimeout(function() {
       $('#clicked2 .box').removeClass('transparent').addClass('animated flipInX')
@@ -35,57 +37,77 @@ $(document).ready(function () {
 
     setTimeout(function() {
       $('#clicked3 .box').removeClass('transparent').addClass('animated flipInX')
-    },2000)
+    },1900)
 
     setTimeout(function() {
       $('#clicked4 .box').removeClass('transparent').addClass('animated tada')
-    },2400)
-
+    },2200)
 
 
   });
 
-//   $(".one").on('mouseleave' , function() {
-//
-//     console.log("leaving")
-//
-//     setTimeout(function() {
-//
-//       $('.first').removeClass('animated slideOutUp');
-//
-//     }, 700)
-//
-//     setTimeout(function() {
-//         $('.first').removeClass('animated slideOutUp');
-//       $('.first').addClass('animated slideInDown');
-//     },1000)
-//
-// setTimeout(function() {
-//       $('.first').removeClass('animated slideInDown');
-//
-//     },1400)
-//
-//     setTimeout(function() {
-//       $('#clicked0 .box').addClass('transparent').removeClass('animated slideInUp');
-//       $('#clicked2 .box').addClass('transparent').removeClass('animated flipInX');
-//       $('#clicked3 .box').addClass('transparent').removeClass('animated flipInX');
-//       $('#clicked4 .box').addClass('transparent').removeClass('animated tada');
-//
-//     },300)
-//
-//   })
+
+
+  $('').on('mouseleave' , function() {
+
+
+      setTimeout(function() {
+
+        $('.first').removeClass('animated slideOutUp');
+
+      }, 700)
+
+      setTimeout(function() {
+          $('.first').removeClass('animated slideOutUp');
+        $('.first').addClass('animated slideInDown');
+      },1000)
+
+      setTimeout(function() {
+        $('.first').removeClass('animated slideInDown');
+
+      },1400)
+
+      setTimeout(function() {
+        $('#clicked0 .box').addClass('transparent').removeClass('animated slideInUp');
+        $('#clicked2 .box').addClass('transparent').removeClass('animated flipInX');
+        $('#clicked3 .box').addClass('transparent').removeClass('animated flipInX');
+        $('#clicked4 .box').addClass('transparent').removeClass('animated tada');
+
+      },300)
+
+  })
+
+
 
 
 
   $(".block2").mouseenter(function() {
 
-      $('.second').addClass('animated slideOutUp')
+    var divPosition = $('#anchorPoint').offset();
+    $('html, body').animate({scrollTop: divPosition.top}, 3000);
 
 
     setTimeout(function() {
-      $('#clicked66 .box').removeClass('transparent').addClass('animated slide-both infinite slow')
-    },1000)
+      $('.two .stickyWords').animate({
+        'padding-top' : 0,
+        'margin-top' :'-5em'
+      },300);
+    }, 500)
 
+    setTimeout(function() {
+        $('.two .stickyWords').animate({
+            'padding-left' : '7em'
+          },600);
+      }, 700)
+
+    setTimeout(function() {
+      $('.second').addClass('animated slideOutUp');
+    }, 200)
+
+
+    setTimeout(function() {
+      $('#clicked66 .box').addClass('animated slide-both infinite slow')
+    },1200)
 
 
     $("#all").mousemove(function(e) {
@@ -142,15 +164,34 @@ $(document).ready(function () {
 //
   $(".block3").mouseenter(function() {
 
-      $('.third').addClass('animated slideOutUp')
+    var divPosition = $('#anchorPoint').offset();
+    $('html, body').animate({scrollTop: divPosition.top}, 3000);
+
+
+    setTimeout(function() {
+      $('.three .stickyWords').animate({
+        'padding-top' : 0,
+        'margin-top' :'-5em'
+      },300);
+    }, 500)
+
+    setTimeout(function() {
+        $('.three .stickyWords').animate({
+            'padding-left' : '7em'
+          },600);
+      }, 700)
+
+    setTimeout(function() {
+      $('.third').addClass('animated slideOutUp');
+    }, 200)
 
       setTimeout(function() {
             $('#clicked8 .box').removeClass('transparent').addClass('animated tilt-in-fwd-tr')
-      },800)
+      },1200)
 
       setTimeout(function() {
             $('#clicked88 .box').removeClass('transparent').addClass('animated bounce-in-top')
-      },1500)
+      },2000)
 
 
   })
@@ -168,32 +209,71 @@ $(document).ready(function () {
 //   })
 //
 //
-  $(".block4").mouseenter(function() {
+  $(".hover4").bind('mouseenter', function() {
 
+    var divPosition = $('#anchorPoint').offset();
+    $('html, body').animate({scrollTop: divPosition.top}, 3000);
+
+
+    setTimeout(function() {
+      $('.four .stickyWords').animate({
+        'padding-top' : 0,
+        'margin-top' :'-5em'
+      },300);
+    }, 500)
+
+    setTimeout(function() {
+        $('.four .stickyWords').animate({
+            'padding-left' : '7em'
+          },600);
+      }, 700)
+
+    setTimeout(function() {
       $('.fourth').addClass('animated slideOutUp');
+    }, 200)
 
       setTimeout(function() {
             $('#clicked11 .box').removeClass('transparent').addClass('animated flicker-in-1')
-      },800)
+      },1200)
 
       setTimeout(function() {
             $('#clicked12 .box').removeClass('transparent').addClass('animated slit-in-vertical')
-      },0)
+      },500)
+
+
+
+      $(this).one('mouseleave', function() {
+
+        setTimeout(function() {
+          $('.four .stickyWords').animate({
+            'padding-top' : '9em',
+            'margin-top' :'0em'
+          },300);
+        }, 600)
+
+        setTimeout(function() {
+            $('.four .stickyWords').animate({
+                'padding-left' : '4em'
+              },600);
+          }, 700)
+
+        setTimeout(function() {
+          $('.fourth').removeClass('animated slideOutUp');
+          $('.fourth').addClass('animated slideInDown');
+        }, 200)
+
+
+          setTimeout(function() {
+                $('#clicked11 .box').addClass('transparent').removeClass('animated flicker-in-1')
+          },1800)
+
+          setTimeout(function() {
+                $('#clicked12 .box').addClass('transparent').removeClass('animated slit-in-vertical')
+          },1800)
+
+      })
 
   })
-//
-//   $(".four").mouseleave(function() {
-//
-//       $('.fourth').removeClass('animated slideOutUp');
-//       $('.fourth').addClass('animated slideInDown');
-//
-//
-//     setTimeout(function() {
-//       $('.fourth').removeClass('animated slideInDown');
-//     }, 900)
-//
-//   })
-
 
 
 })
