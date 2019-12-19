@@ -79,24 +79,12 @@ $(document).ready(function () {
 
     setTimeout(function() {
       $('#clicked66 .box').removeClass('transparent').addClass('animated slide-both infinite slow')
-    },500)
+    },1000)
 
-    // setTimeout(function() {
-    // const slideFade = (elem) => {
-    //    const fade = { opacity: 0, transition: 'opacity .5s' };
-    //    elem.css(fade).addClass('animated slideOutUp slower')
-    //    }
-    //
-    // slideFade($('.abso44'));
-    // },1900)
-    //
-    // setTimeout(function() {
-    //   $('.abso444').removeClass('transparent').addClass('animated fadeInUp')
-    //
-    // },1980)
+
 
     $("#all").mousemove(function(e) {
-      parallaxIt(e, ".phone", 15);
+      parallaxIt(e, ".phone", 25);
 
     });
 
@@ -153,7 +141,14 @@ $(document).ready(function () {
 
       setTimeout(function() {
             $('#clicked8 .box').removeClass('transparent').addClass('animated tilt-in-fwd-tr')
-      },500)
+      },800)
+
+      setTimeout(function() {
+            $('#clicked88 .box').removeClass('transparent').addClass('animated bounce-in-top')
+      },1500)
+
+
+
 
 
   })
