@@ -3,23 +3,29 @@ $(document).ready(function () {
 
   $(".block1").on('mouseenter', function() {
 
+
+    var divPosition = $('#anchorPoint').offset();
+    $('html, body').animate({scrollTop: divPosition.top}, 3000);
+
+    setTimeout(function() {
     $('.first').addClass('animated slideOutUp');
+  }, 600)
 
     setTimeout(function() {
       $('#clicked0 .box').removeClass('transparent').addClass('animated slideInUp')
-    },300)
-
-    setTimeout(function() {
-      $('#clicked2 .box').removeClass('transparent').addClass('animated flipInX')
-    },600)
-
-    setTimeout(function() {
-      $('#clicked3 .box').removeClass('transparent').addClass('animated flipInX')
     },1000)
 
     setTimeout(function() {
+      $('#clicked2 .box').removeClass('transparent').addClass('animated flipInX')
+    },1400)
+
+    setTimeout(function() {
+      $('#clicked3 .box').removeClass('transparent').addClass('animated flipInX')
+    },1700)
+
+    setTimeout(function() {
       $('#clicked4 .box').removeClass('transparent').addClass('animated tada')
-    },1300)
+    },2000)
 
 
 
