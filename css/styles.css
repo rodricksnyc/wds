@@ -210,6 +210,10 @@ input[type="text"].allResults {
   padding-left: 4em;
 }
 
+.upThis {
+  padding-top: 0em;
+}
+
 .one .stickyWords {
   padding-left: 6em;
 }

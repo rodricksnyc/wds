@@ -7,25 +7,39 @@ $(document).ready(function () {
     var divPosition = $('#anchorPoint').offset();
     $('html, body').animate({scrollTop: divPosition.top}, 3000);
 
+
+    setTimeout(function() {
+      $('.one .stickyWords').animate({
+        'padding-top' : 0
+      },300);
+    }, 800)
+
+    setTimeout(function() {
+          $('.one .stickyWords').animate({
+            'padding-left' : '8.4em'
+          },600);
+      }, 1000)
+
+
     setTimeout(function() {
     $('.first').addClass('animated slideOutUp');
-  }, 600)
+  }, 200)
 
     setTimeout(function() {
       $('#clicked0 .box').removeClass('transparent').addClass('animated slideInUp')
-    },1000)
-
-    setTimeout(function() {
-      $('#clicked2 .box').removeClass('transparent').addClass('animated flipInX')
     },1400)
 
     setTimeout(function() {
+      $('#clicked2 .box').removeClass('transparent').addClass('animated flipInX')
+    },1500)
+
+    setTimeout(function() {
       $('#clicked3 .box').removeClass('transparent').addClass('animated flipInX')
-    },1700)
+    },2000)
 
     setTimeout(function() {
       $('#clicked4 .box').removeClass('transparent').addClass('animated tada')
-    },2000)
+    },2400)
 
 
 
