@@ -162,7 +162,7 @@ $(document).ready(function () {
 //   })
 //
 //
-  $(".block3").mouseenter(function() {
+  $(".block3").bind('mouseenter' , function() {
 
     var divPosition = $('#anchorPoint').offset();
     $('html, body').animate({scrollTop: divPosition.top}, 3000);
@@ -194,21 +194,39 @@ $(document).ready(function () {
       },2000)
 
 
+      $(this).one('mouseleave', function() {
+        setTimeout(function() {
+          $('.three .stickyWords').animate({
+            'padding-top' : '9em',
+            'margin-top' :'0em'
+          },300);
+        }, 500)
+
+        setTimeout(function() {
+          $('.three .stickyWords').animate({
+            'padding-left' : '4em'
+          },600);
+        }, 700)
+
+        setTimeout(function() {
+          $('.third').removeClass('animated slideOutUp');
+          $('.third').addClass('animated slideInDown');
+        }, 200)
+
+        setTimeout(function() {
+          $('#clicked8 .box').addClass('transparent').removeClass('animated tilt-in-fwd-tr')
+        },1800)
+
+        setTimeout(function() {
+          $('#clicked88 .box').addClass('transparent').removeClass('animated bounce-in-top')
+        },1800)
+      })
+
   })
 
-//   $(".three").mouseleave(function() {
-//
-//       $('.third').removeClass('animated slideOutUp');
-//       $('.third').addClass('animated slideInDown');
-//
-//
-//     setTimeout(function() {
-//       $('.third').removeClass('animated slideInDown');
-//     }, 900)
-//
-//   })
-//
-//
+
+
+
   $(".hover4").bind('mouseenter', function() {
 
     var divPosition = $('#anchorPoint').offset();

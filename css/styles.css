@@ -445,16 +445,14 @@ z-index: 99999888899;
 }
 
 
-@media (min-height:1100px) {
+
+
+@media (min-height:900px)  {
   .content-spacer {
-    height: 25vw;
+    height: 8vw;
   }
-}
-
-
-@media (min-height:900px) and (max-height:1099px) {
-  .content-spacer {
-    height: 12vw;
+  .whiteOuter {
+    min-height: 1000px;
   }
 }
 
