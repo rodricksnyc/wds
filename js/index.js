@@ -1,8 +1,7 @@
 $(document).ready(function () {
 
 
-  $(".hover1").bind('mouseenter', function() {
-
+  $(".block1").bind('mouseenter', function() {
 
     var divPosition = $('#anchorPoint').offset();
     $('html, body').animate({scrollTop: divPosition.top}, 3000);
@@ -24,8 +23,8 @@ $(document).ready(function () {
 
 
     setTimeout(function() {
-    $('.first').addClass('animated fadeOutUp slow');
-  }, 600)
+      $('.first').addClass('animated fadeOutUp slow');
+    }, 600)
 
     setTimeout(function() {
       $('#clicked0 .box').removeClass('transparent').addClass('animated slideInUp')
@@ -44,7 +43,7 @@ $(document).ready(function () {
     },2200)
 
 
-    $(this).one('mouseleave' , function() {
+    $('.hover1').one('mouseleave' , function() {
 
       setTimeout(function() {
         $('.one .stickyWords').animate({
@@ -69,13 +68,13 @@ $(document).ready(function () {
         $('.first').removeClass('animated fadeInDown');
       },1500)
 
-        setTimeout(function() {
-          $('#clicked0 .box').addClass('transparent').removeClass('animated slideInUp');
-          $('#clicked2 .box').addClass('transparent').removeClass('animated flipInX');
-          $('#clicked3 .box').addClass('transparent').removeClass('animated flipInX');
-          $('#clicked4 .box').addClass('transparent').removeClass('animated tada');
+      setTimeout(function() {
+        $('#clicked0 .box').addClass('transparent').removeClass('animated slideInUp');
+        $('#clicked2 .box').addClass('transparent').removeClass('animated flipInX');
+        $('#clicked3 .box').addClass('transparent').removeClass('animated flipInX');
+        $('#clicked4 .box').addClass('transparent').removeClass('animated tada');
 
-        },2000)
+      },2000)
 
     })
 
@@ -83,8 +82,7 @@ $(document).ready(function () {
 
 
 
-  $(".hover2").bind('mouseenter' , function() {
-
+  $(".block2").bind('mouseenter' , function() {
 
     var divPosition = $('#anchorPoint').offset();
     $('html, body').animate({scrollTop: divPosition.top}, 3000);
@@ -112,13 +110,13 @@ $(document).ready(function () {
     },1200)
 
 
-    $("#all").mousemove(function(e) {
+    $("body").mousemove(function(e) {
       parallaxIt(e, ".phone", 25);
 
     });
 
     function parallaxIt(e, target, movement) {
-      var $this = $("#all");
+      var $this = $("body");
       var relX = e.pageX - $this.offset().left;
       var relY = e.pageY - $this.offset().top;
 
@@ -129,42 +127,43 @@ $(document).ready(function () {
     }
 
 
-   $(this).one('mouseleave', function() {
+    $('.hover2').one('mouseleave', function() {
 
-     setTimeout(function() {
-       $('.two .stickyWords').animate({
-         'padding-top' : '9em',
-         'margin-top' :'0em'
-       },600);
-     }, 500)
+      setTimeout(function() {
+        $('.two .stickyWords').animate({
+          'padding-top' : '9em',
+          'margin-top' :'0em'
+        },600);
+      }, 500)
 
-     // setTimeout(function() {
-     //     $('.one .stickyWords').animate({
-     //         'padding-left' : '4em'
-     //       },600);
-     //   }, 700)
+      // setTimeout(function() {
+      //     $('.one .stickyWords').animate({
+      //         'padding-left' : '4em'
+      //       },600);
+      //   }, 700)
 
-     setTimeout(function() {
-       $('.second').removeClass('animated fadeOutUp slow');
-       $('.second').addClass('animated fadeInDown');
-     }, 200)
+      setTimeout(function() {
+        $('.second').removeClass('animated fadeOutUp slow');
+        $('.second').addClass('animated fadeInDown');
+      }, 200)
 
-     setTimeout(function() {
-       $('.second').removeClass('animated fadeInDown');
-     },1500)
+      setTimeout(function() {
+        $('.second').removeClass('animated fadeInDown');
+      },1500)
 
-     setTimeout(function() {
-       $('#clicked66 .box').removeClass('animated slide-both slow')
-     },1200)
+      setTimeout(function() {
+        $('#clicked66 .box').removeClass('animated slide-both slow')
+      },1200)
 
 
+
+    })
 
   })
 
-  })
 
 
-  $(".hover3").bind('mouseenter' , function() {
+  $(".block3").bind('mouseenter' , function() {
 
     $('.third').removeClass('animated fadeInDown');
 
@@ -189,55 +188,56 @@ $(document).ready(function () {
       $('.third').addClass('animated fadeOutUp slow');
     }, 600)
 
+    setTimeout(function() {
+      $('#clicked8 .box').removeClass('transparent').addClass('animated tilt-in-fwd-tr')
+    },1200)
+
+    setTimeout(function() {
+      $('#clicked88 .box').removeClass('transparent').addClass('animated bounce-in-top')
+    },2000)
+
+
+    $('.hover3').one('mouseleave', function() {
+
+
       setTimeout(function() {
-            $('#clicked8 .box').removeClass('transparent').addClass('animated tilt-in-fwd-tr')
-      },1200)
+        $('.three .stickyWords').animate({
+          'padding-top' : '9em',
+          'margin-top' :'0em'
+        },600);
+      }, 500)
+
+      // setTimeout(function() {
+      //   $('.three .stickyWords').animate({
+      //     'padding-left' : '4em'
+      //   },600);
+      // }, 700)
+
 
       setTimeout(function() {
-            $('#clicked88 .box').removeClass('transparent').addClass('animated bounce-in-top')
-      },2000)
+        $('.third').removeClass('animated fadeOutUp slow');
+        $('.third').addClass('animated fadeInDown');
+      }, 200)
+
+      setTimeout(function() {
+        $('.third').removeClass('animated fadeInDown');
+      },1500)
 
 
-      $(this).one('mouseleave', function() {
+      setTimeout(function() {
+        $('#clicked8 .box').addClass('transparent').removeClass('animated tilt-in-fwd-tr')
+      },1800)
 
-
-        setTimeout(function() {
-          $('.three .stickyWords').animate({
-            'padding-top' : '9em',
-            'margin-top' :'0em'
-          },600);
-        }, 500)
-
-        // setTimeout(function() {
-        //   $('.three .stickyWords').animate({
-        //     'padding-left' : '4em'
-        //   },600);
-        // }, 700)
-
-
-        setTimeout(function() {
-          $('.third').removeClass('animated fadeOutUp slow');
-          $('.third').addClass('animated fadeInDown');
-        }, 200)
-
-        setTimeout(function() {
-          $('.third').removeClass('animated fadeInDown');
-        },1500)
-
-
-        setTimeout(function() {
-          $('#clicked8 .box').addClass('transparent').removeClass('animated tilt-in-fwd-tr')
-        },1800)
-
-        setTimeout(function() {
-          $('#clicked88 .box').addClass('transparent').removeClass('animated bounce-in-top')
-        },1800)
-      })
+      setTimeout(function() {
+        $('#clicked88 .box').addClass('transparent').removeClass('animated bounce-in-top')
+      },1800)
+    })
 
   })
 
 
-  $(".hover4").bind('mouseenter', function() {
+
+  $(".block4").bind('mouseenter', function() {
 
     var divPosition = $('#anchorPoint').offset();
     $('html, body').animate({scrollTop: divPosition.top}, 3000);
@@ -260,51 +260,53 @@ $(document).ready(function () {
       $('.fourth').addClass('animated fadeOutUp');
     }, 600)
 
-      setTimeout(function() {
-            $('#clicked11 .box').removeClass('transparent').addClass('animated flicker-in-1')
-      },1200)
+    setTimeout(function() {
+      $('#clicked11 .box').removeClass('transparent').addClass('animated flicker-in-1')
+    },1200)
+
+    setTimeout(function() {
+      $('#clicked12 .box').removeClass('transparent').addClass('animated slit-in-vertical')
+    },500)
+
+
+
+    $('.hover4').one('mouseleave', function() {
 
       setTimeout(function() {
-            $('#clicked12 .box').removeClass('transparent').addClass('animated slit-in-vertical')
-      },500)
+        $('.four .stickyWords').animate({
+          'padding-top' : '9em',
+          'margin-top' :'0em'
+        },500);
+      }, 600)
 
+      // setTimeout(function() {
+      //     $('.four .stickyWords').animate({
+      //         'padding-left' : '4em'
+      //       },600);
+      //   }, 700)
 
+      setTimeout(function() {
+        $('.fourth').removeClass('animated fadeOutUp slow');
+        $('.fourth').addClass('animated fadeInDown');
+      }, 200)
 
-      $(this).one('mouseleave', function() {
+      setTimeout(function() {
+        $('.fourth').removeClass('animated fadeInDown');
+      },1500)
 
-        setTimeout(function() {
-          $('.four .stickyWords').animate({
-            'padding-top' : '9em',
-            'margin-top' :'0em'
-          },500);
-        }, 600)
+      setTimeout(function() {
+        $('#clicked11 .box').addClass('transparent').removeClass('animated flicker-in-1')
+      },1800)
 
-        // setTimeout(function() {
-        //     $('.four .stickyWords').animate({
-        //         'padding-left' : '4em'
-        //       },600);
-        //   }, 700)
+      setTimeout(function() {
+        $('#clicked12 .box').addClass('transparent').removeClass('animated slit-in-vertical')
+      },1800)
 
-        setTimeout(function() {
-          $('.fourth').removeClass('animated fadeOutUp slow');
-          $('.fourth').addClass('animated fadeInDown');
-        }, 200)
-
-        setTimeout(function() {
-          $('.fourth').removeClass('animated fadeInDown');
-        },1500)
-
-          setTimeout(function() {
-                $('#clicked11 .box').addClass('transparent').removeClass('animated flicker-in-1')
-          },1800)
-
-          setTimeout(function() {
-                $('#clicked12 .box').addClass('transparent').removeClass('animated slit-in-vertical')
-          },1800)
-
-      })
+    })
 
   })
+
+
 
 
 })

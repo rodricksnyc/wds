@@ -203,6 +203,29 @@ input[type="text"].allResults {
   bottom:0;
 }
 
+.whatIsThis {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom:1%;
+  z-index: 9999999999999;
+  display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.white {
+  color:white;
+  font-size:16px;
+}
+
+.fal.fa-long-arrow-down{
+  color:white;
+  font-size:18px;
+  margin-top:-5px;
+  font-weight:500;
+}
+
 .stickyWords {
   position:absolute;
   z-index:99999999;
@@ -216,10 +239,10 @@ input[type="text"].allResults {
 
 .hover4, .hover3, .hover2, .hover1 {
 height: 100vh;
-width: 90%;
+width: 100%;
 position: absolute;
 
-z-index: 99999888899;
+z-index: 9;
 }
 
 .one .stickyWords {
@@ -321,9 +344,9 @@ z-index: 99999888899;
 
 #clicked66 {
   position: absolute;
-  left: 33%;
+  left: 31%;
   z-index: 100;
-  bottom: 46.3%;
+  bottom: 51.3%;
 }
 #clicked66 .box {
   width: 5vw;
