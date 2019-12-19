@@ -1,24 +1,9 @@
 $(document).ready(function () {
 
 
+  $(".block1").on('mouseenter', function() {
 
-  // resizeDiv();
-  // window.onresize = function(event) {
-  //     resizeDiv();
-  // }
-  // function resizeDiv() {
-  //     vpw = $(window).width();
-  //     vph = $(window).height();
-  //     $('#wrapper').css({'height': vph + 'px'});
-  // }
-
-
-  $("#first").on('mouseenter', function() {
-
-
-    console.log("entering")
-
-    $('.first').addClass('animated slideOutUp')
+    $('.first').addClass('animated slideOutUp');
 
     setTimeout(function() {
       $('#clicked0 .box').removeClass('transparent').addClass('animated slideInUp')
@@ -72,7 +57,7 @@ $(document).ready(function () {
 
 
 
-  $("#second").mouseenter(function() {
+  $(".block2").mouseenter(function() {
 
       $('.second').addClass('animated slideOutUp')
 
@@ -135,7 +120,7 @@ $(document).ready(function () {
 //   })
 //
 //
-  $("#third").mouseenter(function() {
+  $(".block3").mouseenter(function() {
 
       $('.third').addClass('animated slideOutUp')
 
@@ -146,9 +131,6 @@ $(document).ready(function () {
       setTimeout(function() {
             $('#clicked88 .box').removeClass('transparent').addClass('animated bounce-in-top')
       },1500)
-
-
-
 
 
   })
@@ -166,7 +148,7 @@ $(document).ready(function () {
 //   })
 //
 //
-  $("#fourth").mouseenter(function() {
+  $(".block4").mouseenter(function() {
 
       $('.fourth').addClass('animated slideOutUp');
 
