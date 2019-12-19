@@ -151,6 +151,10 @@ $(document).ready(function () {
 
       $('.third').addClass('animated slideOutUp')
 
+      setTimeout(function() {
+            $('#clicked8 .box').removeClass('transparent').addClass('animated tilt-in-fwd-tr')
+      },500)
+
 
   })
 
