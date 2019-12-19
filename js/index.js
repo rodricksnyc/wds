@@ -94,8 +94,8 @@ $(document).ready(function () {
       $('.two .stickyWords').animate({
         'padding-top' : 0,
         'margin-top' :'-5em'
-      },300)
-    }, 1000);
+      },800)
+    }, 600);
     // setTimeout(function() {
     //     $('.two .stickyWords').animate({
     //         'padding-left' : '7em'
@@ -103,8 +103,8 @@ $(document).ready(function () {
     //   }, 700)
 
     setTimeout(function() {
-      $('.second').addClass('animated fadeOutUp');
-    }, 650)
+      $('.second').addClass('animated fadeOutUp slow');
+    }, 600)
 
 
     setTimeout(function() {
@@ -135,7 +135,7 @@ $(document).ready(function () {
        $('.two .stickyWords').animate({
          'padding-top' : '9em',
          'margin-top' :'0em'
-       },300);
+       },600);
      }, 500)
 
      // setTimeout(function() {
@@ -145,13 +145,13 @@ $(document).ready(function () {
      //   }, 700)
 
      setTimeout(function() {
-       $('.second').removeClass('animated fadeOutUp');
+       $('.second').removeClass('animated fadeOutUp slow');
        $('.second').addClass('animated fadeInDown');
      }, 200)
 
      setTimeout(function() {
        $('.second').removeClass('animated fadeInDown');
-     },800)
+     },1500)
 
      setTimeout(function() {
        $('#clicked66 .box').removeClass('animated slide-both slow')
@@ -176,8 +176,8 @@ $(document).ready(function () {
       $('.three .stickyWords').animate({
         'padding-top' : 0,
         'margin-top' :'-5em'
-      },300);
-    }, 1000)
+      },800);
+    }, 600)
 
     // setTimeout(function() {
     //     $('.three .stickyWords').animate({
@@ -186,8 +186,8 @@ $(document).ready(function () {
     //   }, 700)
 
     setTimeout(function() {
-      $('.third').addClass('animated fadeOutUp');
-    }, 650)
+      $('.third').addClass('animated fadeOutUp slow');
+    }, 600)
 
       setTimeout(function() {
             $('#clicked8 .box').removeClass('transparent').addClass('animated tilt-in-fwd-tr')
@@ -205,7 +205,7 @@ $(document).ready(function () {
           $('.three .stickyWords').animate({
             'padding-top' : '9em',
             'margin-top' :'0em'
-          },300);
+          },600);
         }, 500)
 
         // setTimeout(function() {
@@ -216,13 +216,13 @@ $(document).ready(function () {
 
 
         setTimeout(function() {
-          $('.third').removeClass('animated fadeOutUp');
+          $('.third').removeClass('animated fadeOutUp slow');
           $('.third').addClass('animated fadeInDown');
         }, 200)
 
         setTimeout(function() {
           $('.third').removeClass('animated fadeInDown');
-        },800)
+        },1500)
 
 
         setTimeout(function() {
@@ -247,8 +247,8 @@ $(document).ready(function () {
       $('.four .stickyWords').animate({
         'padding-top' : 0,
         'margin-top' :'-5em'
-      },300);
-    }, 1000)
+      },800);
+    }, 600)
 
     // setTimeout(function() {
     //     $('.four .stickyWords').animate({
@@ -258,7 +258,7 @@ $(document).ready(function () {
 
     setTimeout(function() {
       $('.fourth').addClass('animated fadeOutUp');
-    }, 650)
+    }, 600)
 
       setTimeout(function() {
             $('#clicked11 .box').removeClass('transparent').addClass('animated flicker-in-1')
@@ -276,8 +276,8 @@ $(document).ready(function () {
           $('.four .stickyWords').animate({
             'padding-top' : '9em',
             'margin-top' :'0em'
-          },300);
-        }, 500)
+          },500);
+        }, 600)
 
         // setTimeout(function() {
         //     $('.four .stickyWords').animate({
@@ -286,13 +286,13 @@ $(document).ready(function () {
         //   }, 700)
 
         setTimeout(function() {
-          $('.fourth').removeClass('animated fadeOutUp');
+          $('.fourth').removeClass('animated fadeOutUp slow');
           $('.fourth').addClass('animated fadeInDown');
         }, 200)
 
         setTimeout(function() {
           $('.fourth').removeClass('animated fadeInDown');
-        },800)
+        },1500)
 
           setTimeout(function() {
                 $('#clicked11 .box').addClass('transparent').removeClass('animated flicker-in-1')
