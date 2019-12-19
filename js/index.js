@@ -3,6 +3,7 @@ $(document).ready(function () {
 
   $(".hover1").bind('mouseenter', function() {
 
+
     var divPosition = $('#anchorPoint').offset();
     $('html, body').animate({scrollTop: divPosition.top}, 3000);
 
@@ -11,8 +12,8 @@ $(document).ready(function () {
       $('.one .stickyWords').animate({
         'padding-top' : 0,
         'margin-top' :'-5em'
-      },300)
-    }, 500);
+      },800)
+    }, 600);
 
 
     // setTimeout(function() {
@@ -23,8 +24,8 @@ $(document).ready(function () {
 
 
     setTimeout(function() {
-    $('.first').addClass('animated slideOutUp');
-  }, 200)
+    $('.first').addClass('animated fadeOutUp slow');
+  }, 600)
 
     setTimeout(function() {
       $('#clicked0 .box').removeClass('transparent').addClass('animated slideInUp')
@@ -49,8 +50,8 @@ $(document).ready(function () {
         $('.one .stickyWords').animate({
           'padding-top' : '9em',
           'margin-top' :'0em'
-        },300);
-      }, 600)
+        },600);
+      }, 500)
 
       // setTimeout(function() {
       //     $('.one .stickyWords').animate({
@@ -59,10 +60,14 @@ $(document).ready(function () {
       //   }, 700)
 
       setTimeout(function() {
-        $('.first').removeClass('animated slideOutUp');
-        $('.first').addClass('animated slideInDown');
+        $('.first').removeClass('animated fadeOutUp slow');
+        $('.first').addClass('animated fadeInDown');
       }, 200)
 
+      setTimeout(function() {
+
+        $('.first').removeClass('animated fadeInDown');
+      },1500)
 
         setTimeout(function() {
           $('#clicked0 .box').addClass('transparent').removeClass('animated slideInUp');
@@ -70,7 +75,7 @@ $(document).ready(function () {
           $('#clicked3 .box').addClass('transparent').removeClass('animated flipInX');
           $('#clicked4 .box').addClass('transparent').removeClass('animated tada');
 
-        },300)
+        },2000)
 
     })
 
@@ -80,6 +85,7 @@ $(document).ready(function () {
 
   $(".hover2").bind('mouseenter' , function() {
 
+
     var divPosition = $('#anchorPoint').offset();
     $('html, body').animate({scrollTop: divPosition.top}, 3000);
 
@@ -88,9 +94,8 @@ $(document).ready(function () {
       $('.two .stickyWords').animate({
         'padding-top' : 0,
         'margin-top' :'-5em'
-      },300);
-    }, 500)
-
+      },300)
+    }, 1000);
     // setTimeout(function() {
     //     $('.two .stickyWords').animate({
     //         'padding-left' : '7em'
@@ -98,8 +103,8 @@ $(document).ready(function () {
     //   }, 700)
 
     setTimeout(function() {
-      $('.second').addClass('animated slideOutUp');
-    }, 200)
+      $('.second').addClass('animated fadeOutUp');
+    }, 650)
 
 
     setTimeout(function() {
@@ -125,23 +130,33 @@ $(document).ready(function () {
 
 
    $(this).one('mouseleave', function() {
-    setTimeout(function() {
-      $('.two .stickyWords').animate({
-        'padding-top' : '9em',
-        'margin-top' :'0em'
-      },300);
-    }, 500)
 
-    // setTimeout(function() {
-    //   $('.two .stickyWords').animate({
-    //     'padding-left' : '4em'
-    //   },600);
-    // }, 700)
+     setTimeout(function() {
+       $('.two .stickyWords').animate({
+         'padding-top' : '9em',
+         'margin-top' :'0em'
+       },300);
+     }, 500)
 
-    setTimeout(function() {
-      $('.second').removeClass('animated slideOutUp');
-      $('.second').addClass('animated slideInDown');
-    }, 200)
+     // setTimeout(function() {
+     //     $('.one .stickyWords').animate({
+     //         'padding-left' : '4em'
+     //       },600);
+     //   }, 700)
+
+     setTimeout(function() {
+       $('.second').removeClass('animated fadeOutUp');
+       $('.second').addClass('animated fadeInDown');
+     }, 200)
+
+     setTimeout(function() {
+       $('.second').removeClass('animated fadeInDown');
+     },800)
+
+     setTimeout(function() {
+       $('#clicked66 .box').removeClass('animated slide-both slow')
+     },1200)
+
 
 
   })
@@ -150,6 +165,8 @@ $(document).ready(function () {
 
 
   $(".hover3").bind('mouseenter' , function() {
+
+    $('.third').removeClass('animated fadeInDown');
 
     var divPosition = $('#anchorPoint').offset();
     $('html, body').animate({scrollTop: divPosition.top}, 3000);
@@ -160,7 +177,7 @@ $(document).ready(function () {
         'padding-top' : 0,
         'margin-top' :'-5em'
       },300);
-    }, 500)
+    }, 1000)
 
     // setTimeout(function() {
     //     $('.three .stickyWords').animate({
@@ -169,8 +186,8 @@ $(document).ready(function () {
     //   }, 700)
 
     setTimeout(function() {
-      $('.third').addClass('animated slideOutUp');
-    }, 200)
+      $('.third').addClass('animated fadeOutUp');
+    }, 650)
 
       setTimeout(function() {
             $('#clicked8 .box').removeClass('transparent').addClass('animated tilt-in-fwd-tr')
@@ -182,6 +199,8 @@ $(document).ready(function () {
 
 
       $(this).one('mouseleave', function() {
+
+
         setTimeout(function() {
           $('.three .stickyWords').animate({
             'padding-top' : '9em',
@@ -195,10 +214,16 @@ $(document).ready(function () {
         //   },600);
         // }, 700)
 
+
         setTimeout(function() {
-          $('.third').removeClass('animated slideOutUp');
-          $('.third').addClass('animated slideInDown');
+          $('.third').removeClass('animated fadeOutUp');
+          $('.third').addClass('animated fadeInDown');
         }, 200)
+
+        setTimeout(function() {
+          $('.third').removeClass('animated fadeInDown');
+        },800)
+
 
         setTimeout(function() {
           $('#clicked8 .box').addClass('transparent').removeClass('animated tilt-in-fwd-tr')
@@ -212,8 +237,6 @@ $(document).ready(function () {
   })
 
 
-
-
   $(".hover4").bind('mouseenter', function() {
 
     var divPosition = $('#anchorPoint').offset();
@@ -225,7 +248,7 @@ $(document).ready(function () {
         'padding-top' : 0,
         'margin-top' :'-5em'
       },300);
-    }, 500)
+    }, 1000)
 
     // setTimeout(function() {
     //     $('.four .stickyWords').animate({
@@ -234,8 +257,8 @@ $(document).ready(function () {
     //   }, 700)
 
     setTimeout(function() {
-      $('.fourth').addClass('animated slideOutUp');
-    }, 200)
+      $('.fourth').addClass('animated fadeOutUp');
+    }, 650)
 
       setTimeout(function() {
             $('#clicked11 .box').removeClass('transparent').addClass('animated flicker-in-1')
@@ -254,7 +277,7 @@ $(document).ready(function () {
             'padding-top' : '9em',
             'margin-top' :'0em'
           },300);
-        }, 600)
+        }, 500)
 
         // setTimeout(function() {
         //     $('.four .stickyWords').animate({
@@ -263,10 +286,13 @@ $(document).ready(function () {
         //   }, 700)
 
         setTimeout(function() {
-          $('.fourth').removeClass('animated slideOutUp');
-          $('.fourth').addClass('animated slideInDown');
+          $('.fourth').removeClass('animated fadeOutUp');
+          $('.fourth').addClass('animated fadeInDown');
         }, 200)
 
+        setTimeout(function() {
+          $('.fourth').removeClass('animated fadeInDown');
+        },800)
 
           setTimeout(function() {
                 $('#clicked11 .box').addClass('transparent').removeClass('animated flicker-in-1')
