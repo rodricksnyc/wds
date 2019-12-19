@@ -214,11 +214,11 @@ input[type="text"].allResults {
   padding-top: 0em;
 }
 
-.hover4 {
+.hover4, .hover3, .hover2, .hover1 {
 height: 100vh;
-width: 100%;
+width: 90%;
 position: absolute;
-left: 0;
+
 z-index: 99999888899;
 }
 

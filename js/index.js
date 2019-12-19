@@ -1,12 +1,11 @@
 $(document).ready(function () {
 
 
-  $(".block1").on('mouseenter', function() {
+  $(".hover1").bind('mouseenter', function() {
 
     var divPosition = $('#anchorPoint').offset();
     $('html, body').animate({scrollTop: divPosition.top}, 3000);
 
-    $('.one').addClass('hovered')
 
     setTimeout(function() {
       $('.one .stickyWords').animate({
@@ -16,11 +15,11 @@ $(document).ready(function () {
     }, 500);
 
 
-    setTimeout(function() {
-          $('.one .stickyWords').animate({
-            'padding-left' : '7em'
-          },600);
-      }, 700)
+    // setTimeout(function() {
+    //       $('.one .stickyWords').animate({
+    //         'padding-left' : '7em'
+    //       },600);
+    //   }, 700)
 
 
     setTimeout(function() {
@@ -44,44 +43,42 @@ $(document).ready(function () {
     },2200)
 
 
+    $(this).one('mouseleave' , function() {
+
+      setTimeout(function() {
+        $('.one .stickyWords').animate({
+          'padding-top' : '9em',
+          'margin-top' :'0em'
+        },300);
+      }, 600)
+
+      // setTimeout(function() {
+      //     $('.one .stickyWords').animate({
+      //         'padding-left' : '4em'
+      //       },600);
+      //   }, 700)
+
+      setTimeout(function() {
+        $('.first').removeClass('animated slideOutUp');
+        $('.first').addClass('animated slideInDown');
+      }, 200)
+
+
+        setTimeout(function() {
+          $('#clicked0 .box').addClass('transparent').removeClass('animated slideInUp');
+          $('#clicked2 .box').addClass('transparent').removeClass('animated flipInX');
+          $('#clicked3 .box').addClass('transparent').removeClass('animated flipInX');
+          $('#clicked4 .box').addClass('transparent').removeClass('animated tada');
+
+        },300)
+
+    })
+
   });
 
 
 
-  $('').on('mouseleave' , function() {
-
-
-      setTimeout(function() {
-
-        $('.first').removeClass('animated slideOutUp');
-
-      }, 700)
-
-      setTimeout(function() {
-          $('.first').removeClass('animated slideOutUp');
-        $('.first').addClass('animated slideInDown');
-      },1000)
-
-      setTimeout(function() {
-        $('.first').removeClass('animated slideInDown');
-
-      },1400)
-
-      setTimeout(function() {
-        $('#clicked0 .box').addClass('transparent').removeClass('animated slideInUp');
-        $('#clicked2 .box').addClass('transparent').removeClass('animated flipInX');
-        $('#clicked3 .box').addClass('transparent').removeClass('animated flipInX');
-        $('#clicked4 .box').addClass('transparent').removeClass('animated tada');
-
-      },300)
-
-  })
-
-
-
-
-
-  $(".block2").mouseenter(function() {
+  $(".hover2").bind('mouseenter' , function() {
 
     var divPosition = $('#anchorPoint').offset();
     $('html, body').animate({scrollTop: divPosition.top}, 3000);
@@ -94,11 +91,11 @@ $(document).ready(function () {
       },300);
     }, 500)
 
-    setTimeout(function() {
-        $('.two .stickyWords').animate({
-            'padding-left' : '7em'
-          },600);
-      }, 700)
+    // setTimeout(function() {
+    //     $('.two .stickyWords').animate({
+    //         'padding-left' : '7em'
+    //       },600);
+    //   }, 700)
 
     setTimeout(function() {
       $('.second').addClass('animated slideOutUp');
@@ -106,7 +103,7 @@ $(document).ready(function () {
 
 
     setTimeout(function() {
-      $('#clicked66 .box').addClass('animated slide-both infinite slow')
+      $('#clicked66 .box').addClass('animated slide-both slow')
     },1200)
 
 
@@ -126,43 +123,33 @@ $(document).ready(function () {
       });
     }
 
+
+   $(this).one('mouseleave', function() {
+    setTimeout(function() {
+      $('.two .stickyWords').animate({
+        'padding-top' : '9em',
+        'margin-top' :'0em'
+      },300);
+    }, 500)
+
+    // setTimeout(function() {
+    //   $('.two .stickyWords').animate({
+    //     'padding-left' : '4em'
+    //   },600);
+    // }, 700)
+
+    setTimeout(function() {
+      $('.second').removeClass('animated slideOutUp');
+      $('.second').addClass('animated slideInDown');
+    }, 200)
+
+
   })
 
-// $(".two").mouseleave(function() {
-//
-//
-//       $('.second').removeClass('animated slideOutUp');
-//       $('.second').addClass('animated slideInDown');
-//
-//
-//     setTimeout(function() {
-//       $('.second').removeClass('animated slideInDown');
-//     }, 900)
-//
-//     setTimeout(function() {
-//       $('#clicked66 .box').addClass('transparent').removeClass('animated slide-both infinite slow')
-//     },300)
-//
-//     $("#all").mousemove(function(e) {
-//       parallaxIt(e, ".phone", 0);
-//
-//     });
-//
-//     function parallaxIt(e, target, movement) {
-//       var $this = $("#all");
-//       var relX = e.pageX - $this.offset().left;
-//       var relY = e.pageY - $this.offset().top;
-//
-//       TweenMax.to(target, 1, {
-//         x: (relX - $this.width() / 2) / $this.width() * movement,
-//         y: (relY - $this.height() / 2) / $this.height() * movement
-//       });
-//     }
-//
-//   })
-//
-//
-  $(".block3").bind('mouseenter' , function() {
+  })
+
+
+  $(".hover3").bind('mouseenter' , function() {
 
     var divPosition = $('#anchorPoint').offset();
     $('html, body').animate({scrollTop: divPosition.top}, 3000);
@@ -175,11 +162,11 @@ $(document).ready(function () {
       },300);
     }, 500)
 
-    setTimeout(function() {
-        $('.three .stickyWords').animate({
-            'padding-left' : '7em'
-          },600);
-      }, 700)
+    // setTimeout(function() {
+    //     $('.three .stickyWords').animate({
+    //         'padding-left' : '7em'
+    //       },600);
+    //   }, 700)
 
     setTimeout(function() {
       $('.third').addClass('animated slideOutUp');
@@ -202,11 +189,11 @@ $(document).ready(function () {
           },300);
         }, 500)
 
-        setTimeout(function() {
-          $('.three .stickyWords').animate({
-            'padding-left' : '4em'
-          },600);
-        }, 700)
+        // setTimeout(function() {
+        //   $('.three .stickyWords').animate({
+        //     'padding-left' : '4em'
+        //   },600);
+        // }, 700)
 
         setTimeout(function() {
           $('.third').removeClass('animated slideOutUp');
@@ -240,11 +227,11 @@ $(document).ready(function () {
       },300);
     }, 500)
 
-    setTimeout(function() {
-        $('.four .stickyWords').animate({
-            'padding-left' : '7em'
-          },600);
-      }, 700)
+    // setTimeout(function() {
+    //     $('.four .stickyWords').animate({
+    //         'padding-left' : '7em'
+    //       },600);
+    //   }, 700)
 
     setTimeout(function() {
       $('.fourth').addClass('animated slideOutUp');
@@ -269,11 +256,11 @@ $(document).ready(function () {
           },300);
         }, 600)
 
-        setTimeout(function() {
-            $('.four .stickyWords').animate({
-                'padding-left' : '4em'
-              },600);
-          }, 700)
+        // setTimeout(function() {
+        //     $('.four .stickyWords').animate({
+        //         'padding-left' : '4em'
+        //       },600);
+        //   }, 700)
 
         setTimeout(function() {
           $('.fourth').removeClass('animated slideOutUp');
