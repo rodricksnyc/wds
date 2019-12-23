@@ -233,16 +233,24 @@ align-items: center;
   padding-left: 4em;
 }
 
+.stickyArrow {
+  position:absolute;
+  z-index:99999999;
+  padding-top: 30em;
+  padding-left: 4em;
+}
+
 .upThis {
   padding-top: 0em;
 }
 
 .hover4, .hover3, .hover2, .hover1 {
 height: 100vh;
-width: 100%;
+width: 90%;
+margin-left:5%;
+/* margin-right:2%; */
 position: absolute;
-
-z-index: 9;
+z-index: 9999999999999999;
 }
 
 .one .stickyWords {
