@@ -162,7 +162,7 @@ input[type="text"].allResults {
   background: white;
   opacity: .85;
   padding: 2em 1em;
-  height: 29em;
+  height: 33em;
   margin-left: 1em;
   margin-right: 1em;
   padding: 3em;
@@ -257,9 +257,13 @@ z-index: 9999999999999999;
   padding-left: 6em;
 }
 
+.one .stickyArrow {
+  padding-left: 6em;
+}
+
 #clicked0 {
   position: absolute;
-  left: 9%;
+  left: 8%;
   z-index: 100;
   bottom: 64%;
 
@@ -480,7 +484,7 @@ z-index: 9999999999999999;
 
 @media (min-height:900px)  {
   .content-spacer {
-    height: 8vw;
+    height: 4vw;
   }
   .whiteOuter {
     min-height: 1000px;

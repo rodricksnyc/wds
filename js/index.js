@@ -66,7 +66,7 @@ $(document).ready(function () {
 
       setTimeout(function() {
           $('.one .stickyArrow').animate({
-              'padding-left' : '4em'
+              'padding-left' : '6em'
             },600);
         }, 700)
 
