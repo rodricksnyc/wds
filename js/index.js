@@ -1,6 +1,22 @@
 $(document).ready(function () {
 
-$(".newWrapper").css("bottom" , -$(document).height());
+
+
+  $('a[href^="#slideDown"]').on('click', function(event) {
+
+    var target = $(this.getAttribute('href'));
+
+    if( target.length ) {
+      event.preventDefault();
+      $('html, body').stop().animate({
+        scrollTop: target.offset().top
+      }, 1600);
+    }
+
+    $(".newWrapper").show()
+})
+
+
 
 
   $(".hover1").bind('mouseenter', function() {
