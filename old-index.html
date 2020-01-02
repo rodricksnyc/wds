@@ -18,8 +18,8 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
   <link rel="stylesheet" type="text/css" href="font-awesome-pro/css/all.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"> -->
 
 </head>
 <body>
@@ -121,7 +121,7 @@
       </section>
 <!-- </div> -->
       <div class="row">
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 padding-0 one">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding-0 one">
           <div class="hover1"></div>
           <div class="whiteOuter first">
             <div id="first" class="whiteInner">
@@ -137,7 +137,7 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 padding-0 two">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding-0 two">
           <div class="hover2"></div>
           <div class="whiteOuter second">
             <div id="second" class="whiteInner">
@@ -152,7 +152,7 @@
               <i class="fal fa-arrow-right navy"></i>
           </div>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 padding-0 three">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding-0 three">
           <div class="hover3"></div>
           <div class="whiteOuter third">
             <div id="third" class="whiteInner">
@@ -167,7 +167,7 @@
               <i class="fal fa-arrow-right navy"></i>
           </div>
         </div>
-        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 padding-0 four">
+        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 padding-0 four">
           <div class="hover4"></div>
           <div class="whiteOuter fourth">
             <div id="fourth" class="whiteInner">
@@ -187,7 +187,7 @@
 
 
       <div class="whatIsThis">
-          <a href="#slideDown" id="slideUp"><p class="white">What is this?</p></a>
+        <p class="white">What is this?</p>
         <i class="fal fa-long-arrow-down"></i>
       </div>
 
@@ -195,46 +195,6 @@
       <div id="anchorPoint"></div>
 
   </div>
-
-  <div class="newWrapper">
-    <div class="container-fluid padding-0">
-      <div id="particles-js"></div>
-      <center>
-        <div class="row">
-          <div class="col-lg-12 col-xs-12 col-md-12 col-sm-12">
-
-            <h1 class="navy larger">Overview</h1>
-
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-5 col-lg-offset-1 col-xs-12 col-md-6 col-sm-6">
-            <h2><span class="teal">A Design System</span> is the source which groups all the elements that will allow the teams to design, realize and develop a product. A good design system is:</h2>
-            <ul class="discs">
-              <li><span class="teal">Reusable</span><br>A design system is a series of components that can be reused in different combinations. A Design System is not a deliverable, but a set of deliverables.</li>
-              <li><span class="teal">Manageable</span><br>Design systems allow you to manage design at scale. A team can zero in on the components that they need most.</li>
-              <li><span class="teal">Ever-Evolving</span><br>It will evolve constantly with the product, the tools and the new technologies. It can stand the test of time and grow to suit the needs of
-                design and development teams.</li>
-              </ul>
-
-            </div>
-            <div class="col-lg-4 col-xs-12 col-md-6 col-sm-6">
-
-              <img src="images/video.png" class="img-responsive video">
-              <blockquote>Styles come and go. Good design is a language, not a style.<br>
-                  <p class="massimo">-Massimo Vignelli</p>
-              </blockquote>
-
-
-            </div>
-
-          </div>
-        </center>
-        <div class="content-spacer2"></div>
-      </div>
-      <a href="#slideUp" id="slideDown"></a>
-    </div>
 
 
 
@@ -249,158 +209,7 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/index.js"></script>
 
-
   <script src="js/TweenMax.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-  <!-- <script src="js/particles.js"></script> -->
-  <script>
-
-
-
-  var color = '#bdeae6';
-  var maxParticles = 80;
-
-
-  $(window).on('load', function () {
-
-
-      $('a[href^="#slideDown"]').on('click', function(event) {
-
-
-
-
-
-
-function draw() {
-  particlesJS('particles-js', {
-    'particles': {
-      'number': {
-        'value': maxParticles,
-        'density': {
-          'enable': true,
-          'value_area': (maxParticles * 10) * 2
-        }
-      },
-      'color': {
-        'value': color
-      },
-      'shape': {
-        'type': 'circle',
-        'stroke': {
-          'width': 0,
-          'color': '#000000'
-        },
-        'polygon': {
-          'nb_sides': 5
-        },
-      },
-      'opacity': {
-        'value': 1,
-        'random': false,
-        'anim': {
-          'enable': false,
-          'speed': 1,
-          'opacity_min': 1,
-          'sync': false
-        }
-      },
-      'size': {
-        'value': 4,
-        'random': true,
-        'anim': {
-          'enable': false,
-          'speed': 40,
-          'size_min': 0.1,
-          'sync': false
-        }
-      },
-      'line_linked': {
-        'enable': true,
-        'distance': 300,
-        'color': color,
-        'opacity': 1,
-        'width': 1
-      },
-      'move': {
-        'enable': true,
-        'speed': 2,
-        'direction': 'none',
-        'random': false,
-        'straight': false,
-        'out_mode': 'out',
-        'bounce': false,
-        'attract': {
-          'enable': false,
-          'rotateX': 600,
-          'rotateY': 1200
-        }
-      }
-    },
-    'interactivity': {
-      'detect_on': 'canvas',
-      'events': {
-        'onhover': {
-          'enable': true,
-          'mode': 'grab'
-        },
-        'onclick': {
-          'enable': true,
-          'mode': 'push'
-        },
-        'resize': true
-      },
-      'modes': {
-        'grab': {
-          'distance': 140,
-          'line_linked': {
-            'opacity': 1
-          }
-        },
-        'bubble': {
-          'distance': 400,
-          'size': 40,
-          'duration': 2,
-          'opacity': 8,
-          'speed': 3
-        },
-        'repulse': {
-          'distance': 200,
-          'duration': 0.4
-        },
-        'push': {
-          'particles_nb': 4
-        },
-        'remove': {
-          'particles_nb': 2
-        }
-      }
-    },
-    'retina_detect': true
-
-  })
-
-}
-
-draw();
-
-var target = $(this.getAttribute('href'));
-
-if( target.length ) {
-  event.preventDefault();
-  $('html, body').stop().animate({
-    scrollTop: target.offset().top
-  }, 1600);
-}
-
-$(".newWrapper").show()
-})
-
-
-  })
-
-
-
-</script>
 
 </body>
 </html>
