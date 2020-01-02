@@ -249,13 +249,29 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/index.js"></script>
 
+
   <script src="js/TweenMax.min.js"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- <script src="js/particles.js"></script> -->
   <script>
+
+
+
   var color = '#bdeae6';
   var maxParticles = 80;
 
-  // ParticlesJS Config.
+
+  $(window).on('load', function () {
+
+
+      $('a[href^="#slideDown"]').on('click', function(event) {
+
+
+
+
+
+
+function draw() {
   particlesJS('particles-js', {
     'particles': {
       'number': {
@@ -360,7 +376,28 @@
       }
     },
     'retina_detect': true
-  });
+
+  })
+
+}
+
+draw();
+
+var target = $(this.getAttribute('href'));
+
+if( target.length ) {
+  event.preventDefault();
+  $('html, body').stop().animate({
+    scrollTop: target.offset().top
+  }, 1600);
+}
+
+$(".newWrapper").show()
+})
+
+
+  })
+
 
 
 </script>

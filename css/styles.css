@@ -1196,10 +1196,10 @@ input[type="text"].allResults {
   }
 }
 
-/* .newWrapper {
+.newWrapper {
   display:none;
 
-} */
+}
 
 h2 {
   font-size:22px;
