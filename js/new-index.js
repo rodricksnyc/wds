@@ -3,7 +3,7 @@ $(document).ready(function () {
 $(".newWrapper").css("bottom" , -$(document).height());
 
 
-  $(".hover1").bind('mouseenter', function() {
+  $(".hover1").on('mouseenter', function() {
 
     var divPosition = $('#anchorPoint').offset();
     $('html, body').animate({scrollTop: divPosition.top}, 3000);
@@ -51,8 +51,9 @@ $(".newWrapper").css("bottom" , -$(document).height());
       $('#clicked4 .box').removeClass('transparent').addClass('animated tada')
     },2200)
 
+})
 
-    $(this).one('mouseleave' , function() {
+    $('.one').on('mouseleave' , function() {
 
       setTimeout(function() {
         $('.one .stickyWords').animate({
@@ -92,10 +93,10 @@ $(".newWrapper").css("bottom" , -$(document).height());
 
     })
 
-  });
 
 
-  $(".hover2").bind('mouseenter' , function() {
+
+  $(".hover2").on('mouseenter' , function() {
 
 
     $('.whatIsThis').fadeOut('slow');
@@ -148,16 +149,10 @@ $(".newWrapper").css("bottom" , -$(document).height());
       });
     }
 
+})
+    $('.two').on('mouseleave', function() {
 
-    $(this).one('mouseleave', function() {
-
-      // if($('.one').is(':hover') || $('.four').is(':hover')) {
-            // $('.whatIsThis').delay(500).fadeIn('slow');
-       // }
-
-       if(!$('.three').is(':hover') && !$('.two').is(':hover')) {
-             $('.whatIsThis').delay(500).fadeIn('slow');
-        }
+        $('.whatIsThis').delay(500).fadeIn('slow');
 
       setTimeout(function() {
         $('.two .stickyWords').animate({
@@ -192,11 +187,11 @@ $(".newWrapper").css("bottom" , -$(document).height());
 
     })
 
-  })
 
 
 
-  $(".hover3").bind('mouseenter' , function() {
+
+  $(".hover3").on('mouseenter' , function() {
 
     $('.whatIsThis').fadeOut('slow');
 
@@ -237,16 +232,11 @@ $(".newWrapper").css("bottom" , -$(document).height());
       $('#clicked88 .box').removeClass('transparent').addClass('animated bounce-in-top')
     },2000)
 
+})
 
-    $(this).one('mouseleave', function() {
+    $('.three').on('mouseleave', function() {
 
-      // if($('.one').is(':hover') || $('.four').is(':hover')) {
-            // $('.whatIsThis').delay(500).fadeIn('slow');
-       // }
-
-       if(!$('.two').is(':hover') && !$('.three').is(':hover')) {
-             $('.whatIsThis').delay(500).fadeIn('slow');
-        }
+        $('.whatIsThis').delay(500).fadeIn('slow');
 
       setTimeout(function() {
         $('.three .stickyWords').animate({
@@ -287,11 +277,11 @@ $(".newWrapper").css("bottom" , -$(document).height());
       },1800)
     })
 
-  })
 
 
 
-  $(".hover4").bind('mouseenter', function() {
+
+  $(".hover4").on('mouseenter', function() {
 
     var divPosition = $('#anchorPoint').offset();
     $('html, body').animate({scrollTop: divPosition.top}, 3000);
@@ -328,9 +318,9 @@ $(".newWrapper").css("bottom" , -$(document).height());
       $('#clicked12 .box').removeClass('transparent').addClass('animated slit-in-vertical')
     },500)
 
+})
 
-
-    $(this).one('mouseleave', function() {
+    $('.four').on('mouseleave', function() {
 
       setTimeout(function() {
         $('.four .stickyWords').animate({
@@ -370,7 +360,7 @@ $(".newWrapper").css("bottom" , -$(document).height());
 
     })
 
-  })
+
 
 
 
