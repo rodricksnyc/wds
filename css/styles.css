@@ -253,6 +253,31 @@ position: absolute;
 z-index: 9999999999999999;
 }
 
+.hover3, .hover2 {
+  height: 36vh;
+      width: 95%;
+
+      position: absolute;
+      z-index: 9999999999999999;
+
+      margin-left: 1em;
+}
+.hover4 {
+    width: 87%;
+    position: absolute;
+    z-index: 9999999999999999;
+
+    margin-left: 1em;
+    margin-right: 7em;
+}
+.hover1 {
+height: 36vh;
+width: 87%;
+position: absolute;
+z-index: 9999999999999999;
+margin-left: 3em;
+}
+
 .one .stickyWords {
   padding-left: 6em;
 }
@@ -1169,4 +1194,9 @@ z-index: 9999999999999999;
     -webkit-transform: translateX(100px);
             transform: translateX(100px);
   }
+}
+
+.newWrapper {
+  /* position: absolute; */
+
 }

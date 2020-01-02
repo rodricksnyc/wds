@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+$(".newWrapper").css("bottom" , -$(document).height());
+
 
   $(".hover1").bind('mouseenter', function() {
 
@@ -95,6 +97,9 @@ $(document).ready(function () {
 
   $(".hover2").bind('mouseenter' , function() {
 
+
+    $('.whatIsThis').fadeOut('slow');
+
     var divPosition = $('#anchorPoint').offset();
     $('html, body').animate({scrollTop: divPosition.top}, 3000);
 
@@ -146,6 +151,8 @@ $(document).ready(function () {
 
     $(this).one('mouseleave', function() {
 
+        $('.whatIsThis').delay(500).fadeIn('slow');
+
       setTimeout(function() {
         $('.two .stickyWords').animate({
           'padding-top' : '9em',
@@ -184,6 +191,8 @@ $(document).ready(function () {
 
 
   $(".hover3").bind('mouseenter' , function() {
+
+    $('.whatIsThis').fadeOut('slow');
 
     $('.third').removeClass('animated fadeInDown');
 
@@ -225,6 +234,7 @@ $(document).ready(function () {
 
     $(this).one('mouseleave', function() {
 
+        $('.whatIsThis').delay(500).fadeIn('slow');
 
       setTimeout(function() {
         $('.three .stickyWords').animate({
