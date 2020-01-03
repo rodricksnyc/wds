@@ -1209,8 +1209,14 @@ input[type="text"].allResults {
 .newWrapper2 {
   background:#edf9f8;
   overflow: hidden;
-
 }
+
+.newWrapper3 {
+
+  overflow: hidden;
+}
+
+
 .shadow {
   -webkit-box-shadow: 0px 10px 10px -9px rgba(0,0,0,0.23);
   -moz-box-shadow: 0px 10px 10px -9px rgba(0,0,0,0.23);
@@ -1224,7 +1230,7 @@ h2 {
   margin-top: 0em;
 }
 
-.benefits {
+.blueSlider {
   /* position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -1379,3 +1385,5 @@ blockquote:after {
   text-align: center;
   font-style: italic;
 }
+
+/* svg circle animation */

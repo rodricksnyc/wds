@@ -3,7 +3,9 @@ $(document).ready(function () {
 $(".newWrapper").addClass('newClass');
 $(".newWrapper2").addClass('newClass');
 
-  $('a[href^="#slideDown"]').on('click', function(event) {
+$(".newWrapper3").addClass('newClass');
+
+$('a[href^="#slideDown"]').on('click', function(event) {
 
 $(".newWrapper").removeClass('newClass')
   var target = $(this.getAttribute('href'));
@@ -150,6 +152,46 @@ if( target.length ) {
   }, 1600);
 
 }
+})
+
+
+$('a[href^="#slideDown3"]').on('click', function(event) {
+
+$(".newWrapper3").removeClass('newClass')
+var target = $(this.getAttribute('href'));
+
+if( target.length ) {
+  event.preventDefault();
+  $('html, body').stop().animate({
+    scrollTop: target.offset().top
+  }, 1600);
+
+}
+// setTimeout(function() {
+//
+//   var eTop = $(".newWrapper3").offset().top;
+//     $(document).scrollTop(eTop);
+//     var eHeight = $(".newWrapper3").height();
+//     var eBottom = eTop + eHeight - $(window).height();
+//     $(document).on("scroll", function(e){
+//         var windowScrollTop = $(window).scrollTop();
+//         if(windowScrollTop < eTop){
+//             console.log("not allowed");
+//             $(document).scrollTop(eTop);
+//         }
+//         else if(windowScrollTop > eBottom){
+//             $(document).scrollTop(eBottom);
+//         }
+//         else{
+//             console.log("allowed");
+//         }
+//     });
+//
+// }, 500)
+
+
+
+
 })
 
 
