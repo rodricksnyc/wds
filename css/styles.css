@@ -1199,9 +1199,11 @@ input[type="text"].allResults {
   }
 }
 
-.newWrapper {
+.newClass {
   /* display:none; */
-
+position: absolute;
+top: -9999px;
+left: -9999px;
 }
 
 h2 {

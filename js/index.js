@@ -1,20 +1,24 @@
 $(document).ready(function () {
 
-
+$(".newWrapper").addClass('newClass')
 
   $('a[href^="#slideDown"]').on('click', function(event) {
 
+$(".newWrapper").removeClass('newClass')
+  var target = $(this.getAttribute('href'));
 
-    var target = $(this.getAttribute('href'));
+  if( target.length ) {
+    event.preventDefault();
+    $('html, body').stop().animate({
+      scrollTop: target.offset().top
+    }, 1600);
+     // $(".newWrapper").show()
+  }
 
-    if( target.length ) {
-      event.preventDefault();
-      $('html, body').stop().animate({
-        scrollTop: target.offset().top
-      }, 1600);
-    }
 
-    // $(".newWrapper").show()
+    // $(".newWrapper").css('position', 'relative');
+    //   $(".newWrapper").css('top', '0');
+    //   $(".newWrapper").css('left', '0')
 
 
     var color = '#bdeae6';
@@ -137,6 +141,24 @@ $(document).ready(function () {
 
 })
 
+// var eTop = $("#wrapper").offset().top;
+//    $(document).scrollTop(eTop);
+//    var eHeight = $("#wrapper").height();
+//    var eBottom = eTop + eHeight - $(window).height();
+//    $(document).on("scroll", function(e){
+//        var windowScrollTop = $(window).scrollTop();
+//        if(windowScrollTop < eTop){
+//            console.log("not allowed");
+//            $(document).scrollTop(eTop);
+//        }
+//        else if(windowScrollTop < eBottom){
+//            $(document).scrollTop(eBottom);
+//        }
+//        else{
+//            console.log("allowed");
+//        }
+//    });
+
 
 
 
@@ -241,11 +263,11 @@ $(document).ready(function () {
 
     // $('.whatIsThis').fadeOut('slow');
 
-  if (window.innerHeight < 900) {
-    var divPosition = $('#anchorPoint').offset();
-    $('html, body').animate({scrollTop: divPosition.top}, 1500);
-
-  }
+  // if (window.innerHeight < 900) {
+  //   var divPosition = $('#anchorPoint').offset();
+  //   $('html, body').animate({scrollTop: divPosition.top}, 1500);
+  //
+  // }
 
 
     setTimeout(function() {
@@ -346,11 +368,11 @@ $(document).ready(function () {
 
     $('.third').removeClass('animated fadeInDown');
 
-  if (window.innerHeight < 900) {
-    var divPosition = $('#anchorPoint').offset();
-    $('html, body').animate({scrollTop: divPosition.top}, 1500);
-
-  }
+  // if (window.innerHeight < 900) {
+  //   var divPosition = $('#anchorPoint').offset();
+  //   $('html, body').animate({scrollTop: divPosition.top}, 1500);
+  //
+  // }
 
 
     setTimeout(function() {
@@ -440,11 +462,11 @@ $(document).ready(function () {
 
   $(".hover4").bind('mouseenter', function() {
 
-    if (window.innerHeight < 900) {
-    var divPosition = $('#anchorPoint').offset();
-    $('html, body').animate({scrollTop: divPosition.top}, 1500);
-
-  }
+  //   if (window.innerHeight < 900) {
+  //   var divPosition = $('#anchorPoint').offset();
+  //   $('html, body').animate({scrollTop: divPosition.top}, 1500);
+  //
+  // }
 
 
     setTimeout(function() {
