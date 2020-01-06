@@ -95,7 +95,7 @@
       }
 
       .cls-9 {
-        fill: #cbcbcb;
+        fill: #22bbad;
       }
 
       .cls-10 {
@@ -414,7 +414,7 @@
         var section = document.getElementById('process')
         var heights = {
           'section': (section.offsetHeight - windowHeight),
-          'top': section.offsetTop
+          'top': section.offsetTop + 4000
         }
 
         window.addEventListener('resize', function(){
@@ -432,32 +432,32 @@
         var stageSix = document.getElementById('stage_six')
 
         function revealStages(scroll){
-          if(scroll > 10) {
+          if(scroll > 3000) {
             stageOne.classList.add('stageVisible');
           } else {
             stageOne.classList.remove('stageVisible');
           }
-          if(scroll > 30) {
+          if(scroll > 3000) {
             stageTwo.classList.add('stageVisible');
           } else {
             stageTwo.classList.remove('stageVisible');
           }
-          if(scroll > 45) {
+          if(scroll > 5000) {
            stageThree.classList.add('stageVisible');
           } else {
             stageThree.classList.remove('stageVisible');
           }
-          if(scroll > 60) {
+          if(scroll > 5000) {
             stageFour.classList.add('stageVisible');
           } else {
             stageFour.classList.remove('stageVisible');
           }
-          if(scroll > 82) {
+          if(scroll > 5000) {
             stageFive.classList.add('stageVisible');
           } else {
             stageFive.classList.remove('stageVisible');
           }
-          if(scroll > 98) {
+          if(scroll > 5000) {
             stageSix.classList.add('stageVisible');
           } else {
             stageSix.classList.remove('stageVisible');
