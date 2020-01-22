@@ -7,7 +7,10 @@ $(".newWrapper3").addClass('newClass');
 
 $('a[href^="#slideDown"]').on('click', function(event) {
 
-$(".newWrapper").removeClass('newClass')
+$(".newWrapper").removeClass('newClass');
+
+ $(".newWrapper2").removeClass('newClass')
+ $(".newWrapper3").removeClass('newClass')
   var target = $(this.getAttribute('href'));
 
   if( target.length ) {
@@ -142,7 +145,7 @@ $(".newWrapper").removeClass('newClass')
 
 $('a[href^="#slideDown2"]').on('click', function(event) {
 
-$(".newWrapper2").removeClass('newClass')
+// $(".newWrapper2").removeClass('newClass')
 var target = $(this.getAttribute('href'));
 
 if( target.length ) {
@@ -157,7 +160,7 @@ if( target.length ) {
 
 $('a[href^="#slideDown3"]').on('click', function(event) {
 
-$(".newWrapper3").removeClass('newClass')
+// $(".newWrapper3").removeClass('newClass')
 var target = $(this.getAttribute('href'));
 
 if( target.length ) {
@@ -189,9 +192,9 @@ if( target.length ) {
 //
 //
 // }, 800)
-setTimeout(function() {
-$('section .fixed-container').css('position', 'fixed')
-}, 1500)
+// setTimeout(function() {
+// $('section .fixed-container').css('position', 'fixed')
+// }, 1500)
 
 
 })
