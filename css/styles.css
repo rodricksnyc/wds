@@ -21,7 +21,7 @@
 
 body, html {
   font-family: 'Montserrat', sans-serif;
-  overflow-x: hidden;
+  
 }
 
 a{
@@ -1388,7 +1388,7 @@ blockquote:after {
 
 /* svg circle animation */
 
-section.process {
+/* section.process {
     z-index: 2;
     height: 400vw;
     position: relative;
@@ -1397,7 +1397,7 @@ section.process {
 background-color: #fff;
 }
 section .fixed-container {
-/* position: fixed; */
+
 position:static;
 top: 150px;
 z-index: 2;
@@ -1410,19 +1410,17 @@ width: 100%;
 
 section.process #process-container .svg-container {
 position: absolute;
-/* top: 40px; */
-/* left:-35px; */
 
 left: -257px;
-/* -webkit-transform: translateY(-50%);
-transform: translateY(-50%); */
 
 }
+
+
 
 section svg {
 display: block;
 width: 100vw;
-/* height: 62.5vw; */
+
 height: 106.5vw;
 }
 section.process #process-container svg.svg-word {
@@ -1458,7 +1456,7 @@ left: 0;
 width: 100%;
 opacity: 0;
 transition: opacity .4s ease;
-}
+} */
 
 /* #track {
 height: 100vh;
@@ -1469,6 +1467,10 @@ top: 0;
 #process {
 height: 600vh;
 } */
+.transparent {
+  opacity:0;
+}
+
 .number {
 transform: scale(0.01);
 transition: transform;

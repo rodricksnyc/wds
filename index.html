@@ -34,27 +34,27 @@ section.process {
 }
 section .fixed-container {
   position: sticky;
-  top: 0;
-  z-index: 2;
-  display: block;
-  height: 100%;
+    top: 0;
+    z-index: 2;
+    display: block;
+    height: 100%;
 }
 section.process #process-container {
   width: 100%;
 }
 
 section.process #process-container .svg-container {
-  position: absolute;
-  top: 10%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  position: sticky;
+      top: 15%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
 
 }
 
 section svg {
   display: block;
   width: 100vw;
-      height: 78.5vw;
+      height: 95.5vw;
   /* height: 62.5vw; */
 }
 section.process #process-container svg.svg-word {
@@ -356,6 +356,7 @@ section.process #process-container .slides .slide {
     </div>
 
 
+
     <div class="newWrapper3">
       <div class="container-fluid padding-0">
         <a href="#slideUp3" id="slideDown3"></a>
@@ -605,6 +606,8 @@ section.process #process-container .slides .slide {
         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         <!-- <script src="js/particles.js"></script> -->
         <script type="text/javascript">
+
+
         function createObserver(section, myFunction) {
           var observer;
           observer = new IntersectionObserver(function(entry, observer){

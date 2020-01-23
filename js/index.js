@@ -201,6 +201,8 @@ if( target.length ) {
 
 
 
+
+
 $(window).on('scroll', function() {
 var screenTop = $(window).scrollTop();
 var screenBottom = $(window).scrollTop() + window.innerHeight;
@@ -209,28 +211,33 @@ $('section').each(function() {
     var elementTop = $(this).offset().top;
     var elementBottom = $(this).offset().top + $(this).outerHeight();
 
-    if ((screenBottom > elementTop + ($(this).find('.heros').height() / 7)) && (screenTop < elementBottom)) {
+    if ((screenBottom > elementTop + ($(this).find('.heros').height() / 9)) && (screenTop < elementBottom)) {
         $('section').removeClass('active')
         $(this).addClass('active')
-    } else {
+    }
+    else  {
         $(this).removeClass('active')
     }
 })
 
 if ($('#process').hasClass('active')) {
 
-setTimeout(function() {
-$('section .fixed-container').css('position', 'fixed')
 
-},2000)
 
 }
 
 else {
-  $('section .fixed-container').css('position', 'sticky')
+
+
 }
 
 })
+
+
+
+
+
+
 
 // $(document).scroll(function() {
 //     var y = $(document).scrollTop(), //get page y value
