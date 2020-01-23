@@ -1410,8 +1410,10 @@ width: 100%;
 
 section.process #process-container .svg-container {
 position: absolute;
-top: 40px;
-left:-35px;
+/* top: 40px; */
+/* left:-35px; */
+
+left: -257px;
 /* -webkit-transform: translateY(-50%);
 transform: translateY(-50%); */
 
