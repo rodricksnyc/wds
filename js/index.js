@@ -200,38 +200,46 @@ if( target.length ) {
 })
 
 
-
-
-
-$(window).on('scroll', function() {
-var screenTop = $(window).scrollTop();
-var screenBottom = $(window).scrollTop() + window.innerHeight;
-
-$('section').each(function() {
-    var elementTop = $(this).offset().top;
-    var elementBottom = $(this).offset().top + $(this).outerHeight();
-
-    if ((screenBottom > elementTop + ($(this).find('.heros').height() / 9)) && (screenTop < elementBottom)) {
-        $('section').removeClass('active')
-        $(this).addClass('active')
+$(document).scroll(function() {
+    var y = $(document).scrollTop(), //get page y value
+        header = $("#process-container"); // your div id
+    if(y >= 2750)  {
+        header.css({position: "fixed", "top" : "0", "left" : "0"});
+    } else {
+        header.css("position", "sticky");
     }
-    else  {
-        $(this).removeClass('active')
-    }
-})
-
-if ($('#process').hasClass('active')) {
+});
 
 
-
-}
-
-else {
-
-
-}
-
-})
+// $(window).on('scroll', function() {
+// var screenTop = $(window).scrollTop();
+// var screenBottom = $(window).scrollTop() + window.innerHeight;
+//
+// $('section').each(function() {
+//     var elementTop = $(this).offset().top;
+//     var elementBottom = $(this).offset().top + $(this).outerHeight();
+//
+//     if ((screenBottom > elementTop + ($(this).find('.heros').height() / 9)) && (screenTop < elementBottom)) {
+//         $('section').removeClass('active')
+//         $(this).addClass('active')
+//     }
+//     else  {
+//         $(this).removeClass('active')
+//     }
+// })
+//
+// if ($('#process').hasClass('active')) {
+//
+//
+//
+// }
+//
+// else {
+//
+//
+// }
+//
+// })
 
 
 
