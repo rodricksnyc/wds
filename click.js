@@ -424,7 +424,7 @@ $(document).ready(function () {
 
 
   $(".hover1").on('mouseenter', function() {
-    // $(".one").css('cursor', 'grab')
+    $(".one").css('cursor', 'grab')
 
     $('.one').addClass('activeState');
 
@@ -433,16 +433,15 @@ $(document).ready(function () {
 
 
   $(".hover1").on('mouseleave', function() {
-    // $(".one").css('cursor', 'pointer')
+    $(".one").css('cursor', 'pointer')
     setTimeout(function () {
       $('.one').removeClass('activeState');
 
-    },600)
+    },200)
   })
 
   $(".hover2").on('mouseenter', function() {
-    // $(".two").css('cursor', 'grab')
-
+    $(".two").css('cursor', 'grab')
 
     setTimeout(function () {
 
@@ -452,16 +451,16 @@ $(document).ready(function () {
 
 
   $(".hover2").on('mouseleave', function() {
-    // $(".two").css('cursor', 'pointer')
+    $(".two").css('cursor', 'pointer')
     setTimeout(function () {
       $('.two').removeClass('activeState');
 
-    },600)
+    },200)
   })
 
 
   $(".hover3").on('mouseenter', function() {
-  // $(".three").css('cursor', 'grab')
+  $(".three").css('cursor', 'grab')
     $('.three').addClass('activeState');
 
 
@@ -469,7 +468,7 @@ $(document).ready(function () {
 
 
   $(".hover3").on('mouseleave', function() {
-    // $(".three").css('cursor', 'pointer')
+    $(".three").css('cursor', 'pointer')
     setTimeout(function () {
       $('.three').removeClass('activeState');
 
@@ -478,15 +477,16 @@ $(document).ready(function () {
 
 
   $(".hover4").on('mouseenter', function() {
-    // $(".four").css('cursor', 'grab')
+    $(".four").css('cursor', 'grab')
     $('.four').addClass('activeState');
+
 
 
   })
 
 
   $(".hover4").on('mouseleave', function() {
-    // $(".four").css('cursor', 'pointer')
+    $(".four").css('cursor', 'pointer')
     setTimeout(function () {
       $('.four').removeClass('activeState');
 
@@ -497,22 +497,23 @@ $(document).ready(function () {
 
 
 
-
-  $(".hover1").bind('mouseenter', function() {
-
+  $(".hover1").bind('click', function() {
 
 
+    // if($('.one').hasClass('activeState')) {
 
 
-    if($('.one').hasClass('activeState')) {
-
-
-      // if($('.one').hasClass('activeState') && !$('.three').hasClass('activeState') && !$('.two').hasClass('activeState') && !$('.four').hasClass('activeState')) {
+      if($('.one').hasClass('activeState') && !$('.three').hasClass('activeState') && !$('.two').hasClass('activeState') && !$('.four').hasClass('activeState')) {
 
 
 
 
-      setTimeout(function() {
+        // $(".hover2").off();
+        //   $(".hover3").off()
+        //     $(".hover4").off()
+
+
+      // setTimeout(function() {
 
 
 
@@ -567,7 +568,7 @@ $(document).ready(function () {
         },2200)
 
 
-      },700)
+      // },700)
 
     }
 
@@ -577,18 +578,18 @@ $(document).ready(function () {
 
 
 
-    // if($('.one').hasClass('activeState') && !$('.three').hasClass('activeState') && !$('.two').hasClass('activeState') && !$('.four').hasClass('activeState')) {
+    if($('.one').hasClass('activeState') && !$('.three').hasClass('activeState') && !$('.two').hasClass('activeState') && !$('.four').hasClass('activeState')) {
 
 
-
+  //
   // setTimeout(function() {
   //       $(".hover2").on();
   //         $(".hover3").on()
   //           $(".hover4").on()
   //
-  //   },700)
+  //   },1500)
 
-  // }
+  }
 
 
 
@@ -648,15 +649,16 @@ $(document).ready(function () {
 
 
 
-  $(".hover2").bind('mouseenter' , function() {
+  $(".hover2").bind('click' , function() {
 
-    // if($('.two').hasClass('activeState') && !$('.three').hasClass('activeState') && !$('.four').hasClass('activeState') && !$('.one').hasClass('activeState')) {
+    if($('.two').hasClass('activeState') && !$('.three').hasClass('activeState') && !$('.four').hasClass('activeState') && !$('.one').hasClass('activeState')) {
 
-    if($('.two').hasClass('activeState')) {
+    // if($('.two').hasClass('activeState')) {
 
 
 
-      setTimeout(function() {
+
+      // setTimeout(function() {
 
 
 
@@ -712,19 +714,14 @@ $(document).ready(function () {
           });
         }
 
-      },700)
+      // },700)
 
     }
 
 
     $(this).one('mouseleave' , function() {
 
-      if($('.two').hasClass('activeState') && !$('.three').hasClass('activeState') && !$('.four').hasClass('activeState') && !$('.one').hasClass('activeState')) {
-
-
-
-
-        }
+      // if($('.two').hasClass('activeState') && !$('.three').hasClass('activeState') && !$('.four').hasClass('activeState') && !$('.one').hasClass('activeState')) {
 
       // if($('.one').is(':hover') || $('.four').is(':hover')) {
       // $('.whatIsThis').delay(500).fadeIn('slow');
@@ -782,14 +779,14 @@ $(document).ready(function () {
 
 
 
-  $(".hover3").bind('mouseenter' , function() {
+  $(".hover3").bind('click' , function() {
 
-    if($('.three').hasClass('activeState')) {
-      // if($('.three').hasClass('activeState') && !$('.four').hasClass('activeState') && !$('.two').hasClass('activeState') && !$('.one').hasClass('activeState')) {
+    // if($('.three').hasClass('activeState')) {
+      if($('.three').hasClass('activeState') && !$('.four').hasClass('activeState') && !$('.two').hasClass('activeState') && !$('.one').hasClass('activeState')) {
 
 
 
-      setTimeout(function() {
+      // setTimeout(function() {
 
 
         // $('.whatIsThis').fadeOut('slow');
@@ -833,7 +830,7 @@ $(document).ready(function () {
           $('#clicked88 .box').removeClass('transparent').addClass('animated bounce-in-top')
         },2000)
 
-      },700)
+      // },700)
 
 
     }
@@ -906,18 +903,18 @@ $(document).ready(function () {
 
 })
 
-  $(".hover4").bind('mouseenter', function() {
+  $(".hover4").bind('click', function() {
 
     // var divPosition = $('#anchorPoint').offset();
     // $('html, body').animate({scrollTop: divPosition.top}, 1500);
     //
 
-    if($('.four').hasClass('activeState')) {
-    // if($('.four').hasClass('activeState') && !$('.three').hasClass('activeState') && !$('.two').hasClass('activeState') && !$('.one').hasClass('activeState')) {
+    // if($('.four').hasClass('activeState')) {
+    if($('.four').hasClass('activeState') && !$('.three').hasClass('activeState') && !$('.two').hasClass('activeState') && !$('.one').hasClass('activeState')) {
 
 
 
-      setTimeout(function() {
+      // setTimeout(function() {
 
 
 
@@ -955,7 +952,7 @@ $(document).ready(function () {
           $('#clicked12 .box').removeClass('transparent').addClass('animated slit-in-vertical')
         },500)
 
-      },700)
+      // },700)
 
 
     }

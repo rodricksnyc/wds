@@ -259,15 +259,25 @@ input[type="text"].allResults {
   z-index: 9999999999999999;
 }
 
-.hover3, .hover2 {
+/* .hover3, .hover2 {
   height: 55vh;
   width: 95%;
   position: absolute;
   z-index: 9999999999999999;
   margin-left: 1em;
   top:1em;
-}
-.hover4 {
+} */
+
+.hover3, .hover2 {
+    height: 60vh;
+    width: 98%;
+    position: absolute;
+    z-index: 9999999999999999;
+    margin-left: 0em;
+    top: -4em;
+
+  }
+/* .hover4 {
   height: 50vh;
   width: 87%;
   position: absolute;
@@ -275,15 +285,48 @@ input[type="text"].allResults {
   margin-left: 1em;
   margin-right: 7em;
   top:4em;
+} */
+
+.hover4 {
+    height: 60vh;
+    width: 95%;
+    position: absolute;
+    z-index: 9999999999999999;
+    margin-left: 0em;
+    margin-right: 0em;
+    top: -4em;
 }
+
 .hover1 {
+    height: 60vh;
+    width: 92%;
+    position: absolute;
+    z-index: 9999999999999999;
+    margin-left: 1.5em;
+    top: -4em;
+
+}
+
+@-webkit-keyframes autofill {
+    0%,100% {
+
+        background: transparent;
+    }
+}
+
+input:-webkit-autofill {
+    -webkit-animation-delay: 1s; /* Safari support - any positive time runs instantly */
+    -webkit-animation-name: autofill;
+    -webkit-animation-fill-mode: both;
+}
+/* .hover1 {
   height: 50vh;
   width: 87%;
   position: absolute;
   z-index: 9999999999999999;
   margin-left: 3em;
   top:4em;
-}
+} */
 
 .one .stickyWords {
   padding-left: 6em;
@@ -1531,8 +1574,6 @@ li .fal {
 
 
 
-
-
 .newWrapper2 {
 
     padding-left: 2em;
@@ -1639,10 +1680,10 @@ h3 {
     background-size: cover;
     background-repeat: no-repeat;
 
-    width: 100%;
+    width: 102vw;
     position: relative;
-    top: 0%;
-    left: 0;
+    top: 0;
+    left: -2em;
     height: 282px !important;
 
     margin-top: 5em;
@@ -1656,7 +1697,8 @@ h3 {
     height:282px;
     z-index: 3;
     right: 0;
-    width: 100%;
+    left:-2em;
+    width: 102vw;
     opacity: .8;
     padding-top: 1em;
     padding-bottom: 1em;
@@ -1793,7 +1835,7 @@ p.teal {
 }
 
 .content-spacer2 {
-  height:12vh;
+  height:10vh;
 }
 
 h1.navy.larger {
