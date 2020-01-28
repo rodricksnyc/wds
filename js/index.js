@@ -1,25 +1,10 @@
 $(document).ready(function () {
 
-$(".newWrapper").addClass('newClass');
-$(".newWrapper2").addClass('newClass');
+// $(".newWrapper").addClass('newClass');
+// $(".newWrapper2").addClass('newClass');
+//
+// $(".newWrapper3").addClass('newClass');
 
-$(".newWrapper3").addClass('newClass');
-
-$('a[href^="#slideDown"]').on('click', function(event) {
-
-$(".newWrapper").removeClass('newClass');
-
- $(".newWrapper2").removeClass('newClass')
- $(".newWrapper3").removeClass('newClass')
-  var target = $(this.getAttribute('href'));
-
-  if( target.length ) {
-    event.preventDefault();
-    $('html, body').stop().animate({
-      scrollTop: target.offset().top
-    }, 1600);
-
-  }
 
 
 
@@ -140,6 +125,256 @@ $(".newWrapper").removeClass('newClass');
   draw();
 
 
+  var color = '#bdeae6';
+  var maxParticles = 80;
+
+
+function drawAgain() {
+  particlesJS('particles', {
+    'particles': {
+      'number': {
+        'value': maxParticles,
+        'density': {
+          'enable': true,
+          'value_area': (maxParticles * 10) * 2
+        }
+      },
+      'color': {
+        'value': color
+      },
+      'shape': {
+        'type': 'circle',
+        'stroke': {
+          'width': 0,
+          'color': '#000000'
+        },
+        'polygon': {
+          'nb_sides': 5
+        },
+      },
+      'opacity': {
+        'value': 1,
+        'random': false,
+        'anim': {
+          'enable': false,
+          'speed': 1,
+          'opacity_min': 1,
+          'sync': false
+        }
+      },
+      'size': {
+        'value': 4,
+        'random': true,
+        'anim': {
+          'enable': false,
+          'speed': 40,
+          'size_min': 0.1,
+          'sync': false
+        }
+      },
+      'line_linked': {
+        'enable': true,
+        'distance': 300,
+        'color': color,
+        'opacity': 1,
+        'width': 1
+      },
+      'move': {
+        'enable': true,
+        'speed': 2,
+        'direction': 'none',
+        'random': false,
+        'straight': false,
+        'out_mode': 'out',
+        'bounce': false,
+        'attract': {
+          'enable': false,
+          'rotateX': 600,
+          'rotateY': 1200
+        }
+      }
+    },
+    'interactivity': {
+      'detect_on': 'canvas',
+      'events': {
+        'onhover': {
+          'enable': true,
+          'mode': 'grab'
+        },
+        'onclick': {
+          'enable': true,
+          'mode': 'push'
+        },
+        'resize': true
+      },
+      'modes': {
+        'grab': {
+          'distance': 140,
+          'line_linked': {
+            'opacity': 1
+          }
+        },
+        'bubble': {
+          'distance': 400,
+          'size': 40,
+          'duration': 2,
+          'opacity': 8,
+          'speed': 3
+        },
+        'repulse': {
+          'distance': 200,
+          'duration': 0.4
+        },
+        'push': {
+          'particles_nb': 4
+        },
+        'remove': {
+          'particles_nb': 2
+        }
+      }
+    },
+    'retina_detect': true
+
+  })
+
+}
+
+drawAgain();
+
+
+
+var color = '#bdeae6';
+var maxParticles = 80;
+
+
+function drawThird() {
+particlesJS('particles-third', {
+  'particles': {
+    'number': {
+      'value': maxParticles,
+      'density': {
+        'enable': true,
+        'value_area': (maxParticles * 10) * 2
+      }
+    },
+    'color': {
+      'value': color
+    },
+    'shape': {
+      'type': 'circle',
+      'stroke': {
+        'width': 0,
+        'color': '#000000'
+      },
+      'polygon': {
+        'nb_sides': 5
+      },
+    },
+    'opacity': {
+      'value': 1,
+      'random': false,
+      'anim': {
+        'enable': false,
+        'speed': 1,
+        'opacity_min': 1,
+        'sync': false
+      }
+    },
+    'size': {
+      'value': 4,
+      'random': true,
+      'anim': {
+        'enable': false,
+        'speed': 40,
+        'size_min': 0.1,
+        'sync': false
+      }
+    },
+    'line_linked': {
+      'enable': true,
+      'distance': 300,
+      'color': color,
+      'opacity': 1,
+      'width': 1
+    },
+    'move': {
+      'enable': true,
+      'speed': 2,
+      'direction': 'none',
+      'random': false,
+      'straight': false,
+      'out_mode': 'out',
+      'bounce': false,
+      'attract': {
+        'enable': false,
+        'rotateX': 600,
+        'rotateY': 1200
+      }
+    }
+  },
+  'interactivity': {
+    'detect_on': 'canvas',
+    'events': {
+      'onhover': {
+        'enable': true,
+        'mode': 'grab'
+      },
+      'onclick': {
+        'enable': true,
+        'mode': 'push'
+      },
+      'resize': true
+    },
+    'modes': {
+      'grab': {
+        'distance': 140,
+        'line_linked': {
+          'opacity': 1
+        }
+      },
+      'bubble': {
+        'distance': 400,
+        'size': 40,
+        'duration': 2,
+        'opacity': 8,
+        'speed': 3
+      },
+      'repulse': {
+        'distance': 200,
+        'duration': 0.4
+      },
+      'push': {
+        'particles_nb': 4
+      },
+      'remove': {
+        'particles_nb': 2
+      }
+    }
+  },
+  'retina_detect': true
+
+})
+
+}
+
+drawThird();
+
+$('a[href^="#slideDown"]').on('click', function(event) {
+
+// $(".newWrapper").removeClass('newClass');
+//
+//  $(".newWrapper2").removeClass('newClass')
+//  $(".newWrapper3").removeClass('newClass')
+  var target = $(this.getAttribute('href'));
+
+  if( target.length ) {
+    event.preventDefault();
+    $('html, body').stop().animate({
+      scrollTop: target.offset().top
+    }, 1600);
+
+  }
+
 
 })
 
@@ -200,46 +435,38 @@ if( target.length ) {
 })
 
 
-$(document).scroll(function() {
-    var y = $(document).scrollTop(), //get page y value
-        header = $("#process-container"); // your div id
-    if(y >= 2750)  {
-        header.css({position: "fixed", "top" : "0", "left" : "0"});
-    } else {
-        header.css("position", "sticky");
+
+
+
+$(window).on('scroll', function() {
+var screenTop = $(window).scrollTop();
+var screenBottom = $(window).scrollTop() + window.innerHeight;
+
+$('section').each(function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = $(this).offset().top + $(this).outerHeight();
+
+    if ((screenBottom > elementTop + ($(this).find('.heros').height() / 9)) && (screenTop < elementBottom)) {
+        $('section').removeClass('active')
+        $(this).addClass('active')
     }
-});
+    else  {
+        $(this).removeClass('active')
+    }
+})
+
+if ($('#process').hasClass('active')) {
 
 
-// $(window).on('scroll', function() {
-// var screenTop = $(window).scrollTop();
-// var screenBottom = $(window).scrollTop() + window.innerHeight;
-//
-// $('section').each(function() {
-//     var elementTop = $(this).offset().top;
-//     var elementBottom = $(this).offset().top + $(this).outerHeight();
-//
-//     if ((screenBottom > elementTop + ($(this).find('.heros').height() / 9)) && (screenTop < elementBottom)) {
-//         $('section').removeClass('active')
-//         $(this).addClass('active')
-//     }
-//     else  {
-//         $(this).removeClass('active')
-//     }
-// })
-//
-// if ($('#process').hasClass('active')) {
-//
-//
-//
-// }
-//
-// else {
-//
-//
-// }
-//
-// })
+
+}
+
+else {
+
+
+}
+
+})
 
 
 
@@ -260,10 +487,10 @@ $(document).scroll(function() {
 
   $(".hover1").bind('mouseenter', function() {
 
-    if (window.innerHeight < 900) {
-      var divPosition = $('#anchorPoint').offset();
-      $('html, body').animate({scrollTop: divPosition.top}, 1500);
-    }
+    // if (window.innerHeight < 900) {
+    //   var divPosition = $('#anchorPoint').offset();
+    //   $('html, body').animate({scrollTop: divPosition.top}, 1500);
+    // }
 
 
 
@@ -359,11 +586,11 @@ $(document).scroll(function() {
 
     // $('.whatIsThis').fadeOut('slow');
 
-  if (window.innerHeight < 900) {
-    var divPosition = $('#anchorPoint').offset();
-    $('html, body').animate({scrollTop: divPosition.top}, 1500);
-
-  }
+  // if (window.innerHeight < 900) {
+  //   var divPosition = $('#anchorPoint').offset();
+  //   $('html, body').animate({scrollTop: divPosition.top}, 1500);
+  //
+  // }
 
 
     setTimeout(function() {
@@ -464,11 +691,11 @@ $(document).scroll(function() {
 
     $('.third').removeClass('animated fadeInDown');
 
-  if (window.innerHeight < 900) {
-    var divPosition = $('#anchorPoint').offset();
-    $('html, body').animate({scrollTop: divPosition.top}, 1500);
-
-  }
+  // if (window.innerHeight < 900) {
+  //   var divPosition = $('#anchorPoint').offset();
+  //   $('html, body').animate({scrollTop: divPosition.top}, 1500);
+  //
+  // }
 
 
     setTimeout(function() {
@@ -558,11 +785,11 @@ $(document).scroll(function() {
 
   $(".hover4").bind('mouseenter', function() {
 
-    if (window.innerHeight < 900) {
-    var divPosition = $('#anchorPoint').offset();
-    $('html, body').animate({scrollTop: divPosition.top}, 1500);
-
-  }
+  //   if (window.innerHeight < 900) {
+  //   var divPosition = $('#anchorPoint').offset();
+  //   $('html, body').animate({scrollTop: divPosition.top}, 1500);
+  //
+  // }
 
 
     setTimeout(function() {
